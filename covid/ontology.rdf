@@ -1,0 +1,1873 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/mujtabacomputers/ontologies/2022/4/untitled-ontology-10#"
+     xml:base="http://www.semanticweb.org/mujtabacomputers/ontologies/2022/4/untitled-ontology-10"
+     xmlns:su="http://su.edu.pk#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:untitled-ontology-10="http://www.semanticweb.org/mujtabacomputers/ontologies/2022/4/untitled-ontology-10#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/mujtabacomputers/ontologies/2022/4/untitled-ontology-10"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://su.edu.pk#AdmittedIn -->
+
+
+    <owl:ObjectProperty rdf:about="http://su.edu.pk#AdmittedIn">
+        <owl:inverseOf rdf:resource="http://su.edu.pk#hasAdmittedPatient"/>
+        <rdfs:domain rdf:resource="http://su.edu.pk#CovidCareCenter"/>
+        <rdfs:range rdf:resource="http://su.edu.pk#Patient"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://su.edu.pk#HasVariant -->
+
+
+    <owl:ObjectProperty rdf:about="http://su.edu.pk#HasVariant">
+        <rdfs:domain rdf:resource="http://su.edu.pk#CovidVariants"/>
+        <rdfs:range rdf:resource="http://su.edu.pk#VariantTypes"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://su.edu.pk#contractedVirusFrom -->
+
+
+    <owl:ObjectProperty rdf:about="http://su.edu.pk#contractedVirusFrom">
+        <owl:inverseOf rdf:resource="http://su.edu.pk#passedVirusTo"/>
+        <rdfs:domain rdf:resource="http://su.edu.pk#Person"/>
+        <rdfs:range rdf:resource="http://su.edu.pk#Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://su.edu.pk#countryWise -->
+
+
+    <owl:ObjectProperty rdf:about="http://su.edu.pk#countryWise">
+        <rdfs:subPropertyOf rdf:resource="http://su.edu.pk#hasStatistics"/>
+        <rdfs:domain rdf:resource="http://su.edu.pk#Country"/>
+        <rdfs:range rdf:resource="http://su.edu.pk#CountryWiseStatistics"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://su.edu.pk#firstCovidSpreadFrom -->
+
+
+    <owl:ObjectProperty rdf:about="http://su.edu.pk#firstCovidSpreadFrom">
+        <rdfs:domain rdf:resource="http://su.edu.pk#CovidOrigin"/>
+        <rdfs:range rdf:resource="http://su.edu.pk#CovidOrigin"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://su.edu.pk#hasAdmittedPatient -->
+
+
+    <owl:ObjectProperty rdf:about="http://su.edu.pk#hasAdmittedPatient">
+        <rdfs:domain rdf:resource="http://su.edu.pk#Patient"/>
+        <rdfs:range rdf:resource="http://su.edu.pk#CovidCareCenter"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://su.edu.pk#hasBalochistanCases -->
+
+
+    <owl:ObjectProperty rdf:about="http://su.edu.pk#hasBalochistanCases">
+        <rdfs:domain rdf:resource="http://su.edu.pk#Balochistan"/>
+        <rdfs:range rdf:resource="http://su.edu.pk#Provinces"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://su.edu.pk#hasBoosterDoseVac -->
+
+
+    <owl:ObjectProperty rdf:about="http://su.edu.pk#hasBoosterDoseVac">
+        <rdfs:domain rdf:resource="http://su.edu.pk#Statistics"/>
+        <rdfs:range rdf:resource="http://su.edu.pk#Vaccination"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://su.edu.pk#hasCountry -->
+
+
+    <owl:ObjectProperty rdf:about="http://su.edu.pk#hasCountry">
+        <rdfs:domain rdf:resource="http://su.edu.pk#Country"/>
+        <rdfs:range rdf:resource="http://su.edu.pk#Country"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://su.edu.pk#hasDiagnosis -->
+
+
+    <owl:ObjectProperty rdf:about="http://su.edu.pk#hasDiagnosis">
+        <owl:inverseOf rdf:resource="http://su.edu.pk#isDiagnosisOf"/>
+        <rdfs:domain rdf:resource="http://su.edu.pk#Patient"/>
+        <rdfs:range rdf:resource="http://su.edu.pk#Diagnosis"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://su.edu.pk#hasDose -->
+
+
+    <owl:ObjectProperty rdf:about="http://su.edu.pk#hasDose">
+        <rdfs:domain rdf:resource="http://su.edu.pk#Patient"/>
+        <rdfs:range rdf:resource="http://su.edu.pk#Vaccination"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://su.edu.pk#hasDoseType -->
+
+
+    <owl:ObjectProperty rdf:about="http://su.edu.pk#hasDoseType">
+        <rdfs:domain rdf:resource="http://su.edu.pk#Vaccination"/>
+        <rdfs:range rdf:resource="http://su.edu.pk#Doses"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://su.edu.pk#hasFirstDose -->
+
+
+    <owl:ObjectProperty rdf:about="http://su.edu.pk#hasFirstDose">
+        <rdfs:domain rdf:resource="http://su.edu.pk#Statistics"/>
+        <rdfs:range rdf:resource="http://su.edu.pk#Vaccination"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://su.edu.pk#hasFirstVac -->
+
+
+    <owl:ObjectProperty rdf:about="http://su.edu.pk#hasFirstVac">
+        <rdfs:domain rdf:resource="http://su.edu.pk#Vaccination"/>
+        <rdfs:range rdf:resource="http://su.edu.pk#Vaccination"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://su.edu.pk#hasFullyVaccinated -->
+
+
+    <owl:ObjectProperty rdf:about="http://su.edu.pk#hasFullyVaccinated">
+        <rdfs:domain rdf:resource="http://su.edu.pk#Statistics"/>
+        <rdfs:range rdf:resource="http://su.edu.pk#Vaccination"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://su.edu.pk#hasGender -->
+
+
+    <owl:ObjectProperty rdf:about="http://su.edu.pk#hasGender">
+        <rdfs:domain rdf:resource="http://su.edu.pk#Person"/>
+        <rdfs:range rdf:resource="http://su.edu.pk#GenderType"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://su.edu.pk#hasGilgitCases -->
+
+
+    <owl:ObjectProperty rdf:about="http://su.edu.pk#hasGilgitCases">
+        <rdfs:domain rdf:resource="http://su.edu.pk#GilgitBaltistan"/>
+        <rdfs:range rdf:resource="http://su.edu.pk#TerristrialAreas"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://su.edu.pk#hasIslamabadCases -->
+
+
+    <owl:ObjectProperty rdf:about="http://su.edu.pk#hasIslamabadCases">
+        <rdfs:domain rdf:resource="http://su.edu.pk#Islamabad"/>
+        <rdfs:range rdf:resource="http://su.edu.pk#TerristrialAreas"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://su.edu.pk#hasKPKCases -->
+
+
+    <owl:ObjectProperty rdf:about="http://su.edu.pk#hasKPKCases">
+        <rdfs:domain rdf:resource="http://su.edu.pk#KPK"/>
+        <rdfs:range rdf:resource="http://su.edu.pk#Provinces"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://su.edu.pk#hasKashmirCases -->
+
+
+    <owl:ObjectProperty rdf:about="http://su.edu.pk#hasKashmirCases">
+        <rdfs:domain rdf:resource="http://su.edu.pk#AzadKashmir"/>
+        <rdfs:range rdf:resource="http://su.edu.pk#TerristrialAreas"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://su.edu.pk#hasOtherDisease -->
+
+
+    <owl:ObjectProperty rdf:about="http://su.edu.pk#hasOtherDisease">
+        <rdfs:domain rdf:resource="http://su.edu.pk#Patient"/>
+        <rdfs:range rdf:resource="http://su.edu.pk#OtherDiseases"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://su.edu.pk#hasSindhCases -->
+
+
+    <owl:ObjectProperty rdf:about="http://su.edu.pk#hasSindhCases">
+        <rdfs:domain rdf:resource="http://su.edu.pk#Sindh"/>
+        <rdfs:range rdf:resource="http://su.edu.pk#Provinces"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://su.edu.pk#hasStatistics -->
+
+
+    <owl:ObjectProperty rdf:about="http://su.edu.pk#hasStatistics">
+        <owl:inverseOf rdf:resource="http://su.edu.pk#isCovid-19StatisticsOf"/>
+        <rdfs:domain rdf:resource="http://su.edu.pk#Place"/>
+        <rdfs:range rdf:resource="http://su.edu.pk#Statistics"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://su.edu.pk#hasSymptoms -->
+
+
+    <owl:ObjectProperty rdf:about="http://su.edu.pk#hasSymptoms">
+        <rdfs:domain rdf:resource="http://su.edu.pk#Patient"/>
+        <rdfs:range rdf:resource="http://su.edu.pk#Symptoms"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://su.edu.pk#hasTakenBy -->
+
+
+    <owl:ObjectProperty rdf:about="http://su.edu.pk#hasTakenBy">
+        <owl:inverseOf rdf:resource="http://su.edu.pk#took"/>
+        <rdfs:domain rdf:resource="http://su.edu.pk#PreventiveMeasures"/>
+        <rdfs:range rdf:resource="http://su.edu.pk#NCOC"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://su.edu.pk#hasTotalDosesAdministered -->
+
+
+    <owl:ObjectProperty rdf:about="http://su.edu.pk#hasTotalDosesAdministered">
+        <rdfs:domain rdf:resource="http://su.edu.pk#Statistics"/>
+        <rdfs:range rdf:resource="http://su.edu.pk#Vaccination"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://su.edu.pk#isCovid-19StatisticsOf -->
+
+
+    <owl:ObjectProperty rdf:about="http://su.edu.pk#isCovid-19StatisticsOf">
+        <rdfs:domain rdf:resource="http://su.edu.pk#Statistics"/>
+        <rdfs:range rdf:resource="http://su.edu.pk#Place"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://su.edu.pk#isDiagnosisOf -->
+
+
+    <owl:ObjectProperty rdf:about="http://su.edu.pk#isDiagnosisOf">
+        <rdfs:domain rdf:resource="http://su.edu.pk#Diagnosis"/>
+        <rdfs:range rdf:resource="http://su.edu.pk#Patient"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://su.edu.pk#nationality -->
+
+
+    <owl:ObjectProperty rdf:about="http://su.edu.pk#nationality">
+        <rdfs:domain rdf:resource="http://su.edu.pk#Person"/>
+        <rdfs:range rdf:resource="http://su.edu.pk#Country"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://su.edu.pk#passedVirusTo -->
+
+
+    <owl:ObjectProperty rdf:about="http://su.edu.pk#passedVirusTo">
+        <rdfs:domain rdf:resource="http://su.edu.pk#Person"/>
+        <rdfs:range rdf:resource="http://su.edu.pk#Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://su.edu.pk#provinceWise -->
+
+
+    <owl:ObjectProperty rdf:about="http://su.edu.pk#provinceWise">
+        <rdfs:subPropertyOf rdf:resource="http://su.edu.pk#hasStatistics"/>
+        <rdfs:domain rdf:resource="http://su.edu.pk#Provinces"/>
+        <rdfs:range rdf:resource="http://su.edu.pk#ProvinceWiseStatistics"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://su.edu.pk#suspectedHost -->
+
+
+    <owl:ObjectProperty rdf:about="http://su.edu.pk#suspectedHost">
+        <rdfs:domain rdf:resource="http://su.edu.pk#ExposureToCovid"/>
+        <rdfs:range rdf:resource="http://su.edu.pk#Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://su.edu.pk#suspectedReasonsOfCovid-19 -->
+
+
+    <owl:ObjectProperty rdf:about="http://su.edu.pk#suspectedReasonsOfCovid-19">
+        <rdfs:domain rdf:resource="http://su.edu.pk#Patient"/>
+        <rdfs:range rdf:resource="http://su.edu.pk#ExposureToCovid"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://su.edu.pk#symptomsinPatient -->
+
+
+    <owl:ObjectProperty rdf:about="http://su.edu.pk#symptomsinPatient">
+        <rdfs:domain rdf:resource="http://su.edu.pk#Patient"/>
+        <rdfs:range rdf:resource="http://su.edu.pk#SymptomsOtherThanCovid"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://su.edu.pk#terristrialWise -->
+
+
+    <owl:ObjectProperty rdf:about="http://su.edu.pk#terristrialWise">
+        <rdfs:subPropertyOf rdf:resource="http://su.edu.pk#hasStatistics"/>
+        <rdfs:domain rdf:resource="http://su.edu.pk#TerristrialAreas"/>
+        <rdfs:range rdf:resource="http://su.edu.pk#TerristrialWiseStatistics"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://su.edu.pk#took -->
+
+
+    <owl:ObjectProperty rdf:about="http://su.edu.pk#took">
+        <rdfs:domain rdf:resource="http://su.edu.pk#NCOC"/>
+        <rdfs:range rdf:resource="http://su.edu.pk#PreventiveMeasures"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://su.edu.pk#wasSpreadBy -->
+
+
+    <owl:ObjectProperty rdf:about="http://su.edu.pk#wasSpreadBy">
+        <rdfs:domain rdf:resource="http://su.edu.pk#DiagnosedWithCovid"/>
+        <rdfs:range rdf:resource="http://su.edu.pk#Country"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mujtabacomputers/ontologies/2022/4/untitled-ontology-10#hasPunjabCases -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mujtabacomputers/ontologies/2022/4/untitled-ontology-10#hasPunjabCases">
+        <rdfs:domain rdf:resource="http://su.edu.pk#Punjab"/>
+        <rdfs:range rdf:resource="http://su.edu.pk#Provinces"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://su.edu.pk#BoosterDose -->
+
+
+    <owl:DatatypeProperty rdf:about="http://su.edu.pk#BoosterDose">
+        <rdfs:domain rdf:resource="http://su.edu.pk#Vaccination"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://su.edu.pk#CovidExposure -->
+
+
+    <owl:DatatypeProperty rdf:about="http://su.edu.pk#CovidExposure">
+        <rdfs:domain rdf:resource="http://su.edu.pk#ExposureToCovid"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://su.edu.pk#CovidSymptoms -->
+
+
+    <owl:DatatypeProperty rdf:about="http://su.edu.pk#CovidSymptoms">
+        <rdfs:domain rdf:resource="http://su.edu.pk#Symptoms"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://su.edu.pk#DoseType -->
+
+
+    <owl:DatatypeProperty rdf:about="http://su.edu.pk#DoseType">
+        <rdfs:domain rdf:resource="http://su.edu.pk#Doses"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://su.edu.pk#FirstDose -->
+
+
+    <owl:DatatypeProperty rdf:about="http://su.edu.pk#FirstDose">
+        <rdfs:domain rdf:resource="http://su.edu.pk#Vaccination"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://su.edu.pk#FullyVaccinated -->
+
+
+    <owl:DatatypeProperty rdf:about="http://su.edu.pk#FullyVaccinated">
+        <rdfs:domain rdf:resource="http://su.edu.pk#Vaccination"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://su.edu.pk#IsPatientSufferFromCovid -->
+
+
+    <owl:DatatypeProperty rdf:about="http://su.edu.pk#IsPatientSufferFromCovid">
+        <rdfs:domain rdf:resource="http://su.edu.pk#Patient"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://su.edu.pk#IsPatientVaccinated -->
+
+
+    <owl:DatatypeProperty rdf:about="http://su.edu.pk#IsPatientVaccinated">
+        <rdfs:domain rdf:resource="http://su.edu.pk#Patient"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://su.edu.pk#PopulationPercentage -->
+
+
+    <owl:DatatypeProperty rdf:about="http://su.edu.pk#PopulationPercentage">
+        <rdfs:domain rdf:resource="http://su.edu.pk#Country"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://su.edu.pk#PreventiveMeasures -->
+
+
+    <owl:DatatypeProperty rdf:about="http://su.edu.pk#PreventiveMeasures">
+        <rdfs:domain rdf:resource="http://su.edu.pk#PreventiveMeasures"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://su.edu.pk#SymptomsOtherThanCovid -->
+
+
+    <owl:DatatypeProperty rdf:about="http://su.edu.pk#SymptomsOtherThanCovid">
+        <rdfs:domain rdf:resource="http://su.edu.pk#SymptomsOtherThanCovid"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://su.edu.pk#VariantTypes -->
+
+
+    <owl:DatatypeProperty rdf:about="http://su.edu.pk#VariantTypes">
+        <rdfs:domain rdf:resource="http://su.edu.pk#VariantTypes"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://su.edu.pk#adultsPopPer -->
+
+
+    <owl:DatatypeProperty rdf:about="http://su.edu.pk#adultsPopPer">
+        <rdfs:subPropertyOf rdf:resource="http://su.edu.pk#PopulationPercentage"/>
+        <rdfs:domain rdf:resource="http://su.edu.pk#Country"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://su.edu.pk#caseId -->
+
+
+    <owl:DatatypeProperty rdf:about="http://su.edu.pk#caseId">
+        <rdfs:domain rdf:resource="http://su.edu.pk#DiagnosedWithCovid"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://su.edu.pk#cases -->
+
+
+    <owl:DatatypeProperty rdf:about="http://su.edu.pk#cases">
+        <rdfs:subPropertyOf rdf:resource="http://su.edu.pk#metrics"/>
+        <rdfs:domain rdf:resource="http://su.edu.pk#Statistics"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://su.edu.pk#childrenPopPer -->
+
+
+    <owl:DatatypeProperty rdf:about="http://su.edu.pk#childrenPopPer">
+        <rdfs:subPropertyOf rdf:resource="http://su.edu.pk#PopulationPercentage"/>
+        <rdfs:domain rdf:resource="http://su.edu.pk#Country"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://su.edu.pk#confirmedCases -->
+
+
+    <owl:DatatypeProperty rdf:about="http://su.edu.pk#confirmedCases">
+        <rdfs:subPropertyOf rdf:resource="http://su.edu.pk#cases"/>
+        <rdfs:domain rdf:resource="http://su.edu.pk#Statistics"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://su.edu.pk#countryCode -->
+
+
+    <owl:DatatypeProperty rdf:about="http://su.edu.pk#countryCode">
+        <rdfs:domain rdf:resource="http://su.edu.pk#Country"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://su.edu.pk#deceased -->
+
+
+    <owl:DatatypeProperty rdf:about="http://su.edu.pk#deceased">
+        <rdfs:subPropertyOf rdf:resource="http://su.edu.pk#cases"/>
+        <rdfs:domain rdf:resource="http://su.edu.pk#Statistics"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://su.edu.pk#firstCovidCases -->
+
+
+    <owl:DatatypeProperty rdf:about="http://su.edu.pk#firstCovidCases">
+        <rdfs:domain rdf:resource="http://su.edu.pk#CovidOrigin"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://su.edu.pk#firstVac -->
+
+
+    <owl:DatatypeProperty rdf:about="http://su.edu.pk#firstVac">
+        <rdfs:domain rdf:resource="http://su.edu.pk#Vaccination"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://su.edu.pk#hasCausedAnySecondaryInfections -->
+
+
+    <owl:DatatypeProperty rdf:about="http://su.edu.pk#hasCausedAnySecondaryInfections">
+        <rdfs:domain rdf:resource="http://su.edu.pk#Patient"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://su.edu.pk#metrics -->
+
+
+    <owl:DatatypeProperty rdf:about="http://su.edu.pk#metrics">
+        <rdfs:domain rdf:resource="http://su.edu.pk#Statistics"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://su.edu.pk#otherDiseases -->
+
+
+    <owl:DatatypeProperty rdf:about="http://su.edu.pk#otherDiseases">
+        <rdfs:domain rdf:resource="http://su.edu.pk#Patient"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://su.edu.pk#place -->
+
+
+    <owl:DatatypeProperty rdf:about="http://su.edu.pk#place">
+        <rdfs:domain rdf:resource="http://su.edu.pk#Place"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://su.edu.pk#population -->
+
+
+    <owl:DatatypeProperty rdf:about="http://su.edu.pk#population">
+        <rdfs:domain rdf:resource="http://su.edu.pk#Country"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://su.edu.pk#recovered -->
+
+
+    <owl:DatatypeProperty rdf:about="http://su.edu.pk#recovered">
+        <rdfs:subPropertyOf rdf:resource="http://su.edu.pk#cases"/>
+        <rdfs:domain rdf:resource="http://su.edu.pk#Statistics"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://su.edu.pk#source -->
+
+
+    <owl:DatatypeProperty rdf:about="http://su.edu.pk#source">
+        <rdfs:domain rdf:resource="http://su.edu.pk#Statistics"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#anyURI"/>
+                    <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#string"/>
+                </owl:unionOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://su.edu.pk#totalCasesInBalochistan -->
+
+
+    <owl:DatatypeProperty rdf:about="http://su.edu.pk#totalCasesInBalochistan">
+        <rdfs:domain rdf:resource="http://su.edu.pk#Balochistan"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://su.edu.pk#totalCasesInGilgit -->
+
+
+    <owl:DatatypeProperty rdf:about="http://su.edu.pk#totalCasesInGilgit">
+        <rdfs:domain rdf:resource="http://su.edu.pk#GilgitBaltistan"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://su.edu.pk#totalCasesInIslamabad -->
+
+
+    <owl:DatatypeProperty rdf:about="http://su.edu.pk#totalCasesInIslamabad">
+        <rdfs:domain rdf:resource="http://su.edu.pk#Islamabad"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://su.edu.pk#totalCasesInKPK -->
+
+
+    <owl:DatatypeProperty rdf:about="http://su.edu.pk#totalCasesInKPK">
+        <rdfs:domain rdf:resource="http://su.edu.pk#KPK"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://su.edu.pk#totalCasesInKashmir -->
+
+
+    <owl:DatatypeProperty rdf:about="http://su.edu.pk#totalCasesInKashmir">
+        <rdfs:domain rdf:resource="http://su.edu.pk#AzadKashmir"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://su.edu.pk#totalCasesInPunjab -->
+
+
+    <owl:DatatypeProperty rdf:about="http://su.edu.pk#totalCasesInPunjab">
+        <rdfs:domain rdf:resource="http://su.edu.pk#Punjab"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://su.edu.pk#totalCasesInSindh -->
+
+
+    <owl:DatatypeProperty rdf:about="http://su.edu.pk#totalCasesInSindh">
+        <rdfs:domain rdf:resource="http://su.edu.pk#Sindh"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://su.edu.pk#totalDoses -->
+
+
+    <owl:DatatypeProperty rdf:about="http://su.edu.pk#totalDoses">
+        <rdfs:domain rdf:resource="http://su.edu.pk#Vaccination"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://su.edu.pk#youthPopPer -->
+
+
+    <owl:DatatypeProperty rdf:about="http://su.edu.pk#youthPopPer">
+        <rdfs:subPropertyOf rdf:resource="http://su.edu.pk#PopulationPercentage"/>
+        <rdfs:domain rdf:resource="http://su.edu.pk#Country"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://su.edu.pk#AzadKashmir -->
+
+
+    <owl:Class rdf:about="http://su.edu.pk#AzadKashmir">
+        <rdfs:subClassOf rdf:resource="http://su.edu.pk#TerristrialAreas"/>
+    </owl:Class>
+    
+
+
+    <!-- http://su.edu.pk#Balochistan -->
+
+
+    <owl:Class rdf:about="http://su.edu.pk#Balochistan">
+        <rdfs:subClassOf rdf:resource="http://su.edu.pk#Provinces"/>
+    </owl:Class>
+    
+
+
+    <!-- http://su.edu.pk#Country -->
+
+
+    <owl:Class rdf:about="http://su.edu.pk#Country">
+        <rdfs:subClassOf rdf:resource="http://su.edu.pk#Place"/>
+    </owl:Class>
+    
+
+
+    <!-- http://su.edu.pk#CountryWiseStatistics -->
+
+
+    <owl:Class rdf:about="http://su.edu.pk#CountryWiseStatistics">
+        <rdfs:subClassOf rdf:resource="http://su.edu.pk#Statistics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://su.edu.pk#CovidCareCenter -->
+
+
+    <owl:Class rdf:about="http://su.edu.pk#CovidCareCenter">
+        <rdfs:subClassOf rdf:resource="http://su.edu.pk#Organization"/>
+    </owl:Class>
+    
+
+
+    <!-- http://su.edu.pk#CovidOrigin -->
+
+
+    <owl:Class rdf:about="http://su.edu.pk#CovidOrigin"/>
+    
+
+
+    <!-- http://su.edu.pk#CovidVariants -->
+
+
+    <owl:Class rdf:about="http://su.edu.pk#CovidVariants"/>
+    
+
+
+    <!-- http://su.edu.pk#DiagnosedWithCovid -->
+
+
+    <owl:Class rdf:about="http://su.edu.pk#DiagnosedWithCovid">
+        <rdfs:subClassOf rdf:resource="http://su.edu.pk#Patient"/>
+        <owl:disjointWith rdf:resource="http://su.edu.pk#UntestedForCovid"/>
+    </owl:Class>
+    
+
+
+    <!-- http://su.edu.pk#Diagnosis -->
+
+
+    <owl:Class rdf:about="http://su.edu.pk#Diagnosis"/>
+    
+
+
+    <!-- http://su.edu.pk#Doctor -->
+
+
+    <owl:Class rdf:about="http://su.edu.pk#Doctor">
+        <rdfs:subClassOf rdf:resource="http://su.edu.pk#HealthCareProfessionals"/>
+    </owl:Class>
+    
+
+
+    <!-- http://su.edu.pk#Doses -->
+
+
+    <owl:Class rdf:about="http://su.edu.pk#Doses">
+        <rdfs:subClassOf rdf:resource="http://su.edu.pk#Vaccination"/>
+    </owl:Class>
+    
+
+
+    <!-- http://su.edu.pk#Entity -->
+
+
+    <owl:Class rdf:about="http://su.edu.pk#Entity"/>
+    
+
+
+    <!-- http://su.edu.pk#ExposureToCovid -->
+
+
+    <owl:Class rdf:about="http://su.edu.pk#ExposureToCovid"/>
+    
+
+
+    <!-- http://su.edu.pk#Female -->
+
+
+    <owl:Class rdf:about="http://su.edu.pk#Female">
+        <rdfs:subClassOf rdf:resource="http://su.edu.pk#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://su.edu.pk#GenderType -->
+
+
+    <owl:Class rdf:about="http://su.edu.pk#GenderType">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://su.edu.pk#Female"/>
+                    <rdf:Description rdf:about="http://su.edu.pk#Male"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://su.edu.pk#GilgitBaltistan -->
+
+
+    <owl:Class rdf:about="http://su.edu.pk#GilgitBaltistan">
+        <rdfs:subClassOf rdf:resource="http://su.edu.pk#TerristrialAreas"/>
+    </owl:Class>
+    
+
+
+    <!-- http://su.edu.pk#HealthCareProfessionals -->
+
+
+    <owl:Class rdf:about="http://su.edu.pk#HealthCareProfessionals">
+        <rdfs:subClassOf rdf:resource="http://su.edu.pk#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://su.edu.pk#HealthOrganization -->
+
+
+    <owl:Class rdf:about="http://su.edu.pk#HealthOrganization">
+        <rdfs:subClassOf rdf:resource="http://su.edu.pk#Organization"/>
+    </owl:Class>
+    
+
+
+    <!-- http://su.edu.pk#Islamabad -->
+
+
+    <owl:Class rdf:about="http://su.edu.pk#Islamabad">
+        <rdfs:subClassOf rdf:resource="http://su.edu.pk#TerristrialAreas"/>
+    </owl:Class>
+    
+
+
+    <!-- http://su.edu.pk#KPK -->
+
+
+    <owl:Class rdf:about="http://su.edu.pk#KPK">
+        <rdfs:subClassOf rdf:resource="http://su.edu.pk#Provinces"/>
+    </owl:Class>
+    
+
+
+    <!-- http://su.edu.pk#Male -->
+
+
+    <owl:Class rdf:about="http://su.edu.pk#Male">
+        <rdfs:subClassOf rdf:resource="http://su.edu.pk#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://su.edu.pk#Mild -->
+
+
+    <owl:Class rdf:about="http://su.edu.pk#Mild">
+        <rdfs:subClassOf rdf:resource="http://su.edu.pk#Diagnosis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://su.edu.pk#Moderate -->
+
+
+    <owl:Class rdf:about="http://su.edu.pk#Moderate">
+        <rdfs:subClassOf rdf:resource="http://su.edu.pk#Diagnosis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://su.edu.pk#NCOC -->
+
+
+    <owl:Class rdf:about="http://su.edu.pk#NCOC">
+        <rdfs:subClassOf rdf:resource="http://su.edu.pk#Organization"/>
+    </owl:Class>
+    
+
+
+    <!-- http://su.edu.pk#NonVaccinated -->
+
+
+    <owl:Class rdf:about="http://su.edu.pk#NonVaccinated">
+        <rdfs:subClassOf rdf:resource="http://su.edu.pk#Patient"/>
+    </owl:Class>
+    
+
+
+    <!-- http://su.edu.pk#Nurse -->
+
+
+    <owl:Class rdf:about="http://su.edu.pk#Nurse">
+        <rdfs:subClassOf rdf:resource="http://su.edu.pk#HealthCareProfessionals"/>
+    </owl:Class>
+    
+
+
+    <!-- http://su.edu.pk#Organization -->
+
+
+    <owl:Class rdf:about="http://su.edu.pk#Organization">
+        <rdfs:subClassOf rdf:resource="http://su.edu.pk#Entity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://su.edu.pk#OtherDiseases -->
+
+
+    <owl:Class rdf:about="http://su.edu.pk#OtherDiseases">
+        <rdfs:subClassOf rdf:resource="http://su.edu.pk#Patient"/>
+    </owl:Class>
+    
+
+
+    <!-- http://su.edu.pk#Patient -->
+
+
+    <owl:Class rdf:about="http://su.edu.pk#Patient">
+        <rdfs:subClassOf rdf:resource="http://su.edu.pk#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://su.edu.pk#Person -->
+
+
+    <owl:Class rdf:about="http://su.edu.pk#Person">
+        <rdfs:subClassOf rdf:resource="http://su.edu.pk#Entity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://su.edu.pk#Place -->
+
+
+    <owl:Class rdf:about="http://su.edu.pk#Place"/>
+    
+
+
+    <!-- http://su.edu.pk#PreventiveMeasures -->
+
+
+    <owl:Class rdf:about="http://su.edu.pk#PreventiveMeasures"/>
+    
+
+
+    <!-- http://su.edu.pk#ProvinceWiseStatistics -->
+
+
+    <owl:Class rdf:about="http://su.edu.pk#ProvinceWiseStatistics">
+        <rdfs:subClassOf rdf:resource="http://su.edu.pk#Statistics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://su.edu.pk#Provinces -->
+
+
+    <owl:Class rdf:about="http://su.edu.pk#Provinces">
+        <rdfs:subClassOf rdf:resource="http://su.edu.pk#Place"/>
+    </owl:Class>
+    
+
+
+    <!-- http://su.edu.pk#Punjab -->
+
+
+    <owl:Class rdf:about="http://su.edu.pk#Punjab">
+        <rdfs:subClassOf rdf:resource="http://su.edu.pk#Provinces"/>
+    </owl:Class>
+    
+
+
+    <!-- http://su.edu.pk#Severe -->
+
+
+    <owl:Class rdf:about="http://su.edu.pk#Severe">
+        <rdfs:subClassOf rdf:resource="http://su.edu.pk#Diagnosis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://su.edu.pk#Sindh -->
+
+
+    <owl:Class rdf:about="http://su.edu.pk#Sindh">
+        <rdfs:subClassOf rdf:resource="http://su.edu.pk#Provinces"/>
+    </owl:Class>
+    
+
+
+    <!-- http://su.edu.pk#Statistics -->
+
+
+    <owl:Class rdf:about="http://su.edu.pk#Statistics"/>
+    
+
+
+    <!-- http://su.edu.pk#Symptoms -->
+
+
+    <owl:Class rdf:about="http://su.edu.pk#Symptoms">
+        <owl:disjointWith rdf:resource="http://su.edu.pk#SymptomsOtherThanCovid"/>
+    </owl:Class>
+    
+
+
+    <!-- http://su.edu.pk#SymptomsOtherThanCovid -->
+
+
+    <owl:Class rdf:about="http://su.edu.pk#SymptomsOtherThanCovid"/>
+    
+
+
+    <!-- http://su.edu.pk#TerristrialAreas -->
+
+
+    <owl:Class rdf:about="http://su.edu.pk#TerristrialAreas">
+        <rdfs:subClassOf rdf:resource="http://su.edu.pk#Place"/>
+    </owl:Class>
+    
+
+
+    <!-- http://su.edu.pk#TerristrialWiseStatistics -->
+
+
+    <owl:Class rdf:about="http://su.edu.pk#TerristrialWiseStatistics">
+        <rdfs:subClassOf rdf:resource="http://su.edu.pk#Statistics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://su.edu.pk#UntestedForCovid -->
+
+
+    <owl:Class rdf:about="http://su.edu.pk#UntestedForCovid">
+        <rdfs:subClassOf rdf:resource="http://su.edu.pk#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://su.edu.pk#Vaccinated -->
+
+
+    <owl:Class rdf:about="http://su.edu.pk#Vaccinated">
+        <rdfs:subClassOf rdf:resource="http://su.edu.pk#Patient"/>
+    </owl:Class>
+    
+
+
+    <!-- http://su.edu.pk#Vaccination -->
+
+
+    <owl:Class rdf:about="http://su.edu.pk#Vaccination"/>
+    
+
+
+    <!-- http://su.edu.pk#VariantTypes -->
+
+
+    <owl:Class rdf:about="http://su.edu.pk#VariantTypes">
+        <rdfs:subClassOf rdf:resource="http://su.edu.pk#CovidVariants"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://su.edu.pk#Alpha -->
+
+
+    <owl:NamedIndividual rdf:about="http://su.edu.pk#Alpha">
+        <rdf:type rdf:resource="http://su.edu.pk#VariantTypes"/>
+        <su:HasVariant rdf:resource="http://su.edu.pk#Alpha"/>
+        <su:VariantTypes>Alpha</su:VariantTypes>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://su.edu.pk#AstraZeneca -->
+
+
+    <owl:NamedIndividual rdf:about="http://su.edu.pk#AstraZeneca">
+        <rdf:type rdf:resource="http://su.edu.pk#Doses"/>
+        <su:hasDoseType rdf:resource="http://su.edu.pk#AstraZeneca"/>
+        <su:DoseType>AstraZeneca</su:DoseType>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://su.edu.pk#AzadKashmir -->
+
+
+    <owl:NamedIndividual rdf:about="http://su.edu.pk#AzadKashmir">
+        <rdf:type rdf:resource="http://su.edu.pk#TerristrialWiseStatistics"/>
+        <su:hasKashmirCases rdf:resource="http://su.edu.pk#AzadKashmir"/>
+        <su:source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://covid.gov.pk/</su:source>
+        <su:totalCasesInKashmir rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">43310</su:totalCasesInKashmir>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://su.edu.pk#Balochistan -->
+
+
+    <owl:NamedIndividual rdf:about="http://su.edu.pk#Balochistan">
+        <rdf:type rdf:resource="http://su.edu.pk#ProvinceWiseStatistics"/>
+        <su:hasBalochistanCases rdf:resource="http://su.edu.pk#Balochistan"/>
+        <su:source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://covid.gov.pk/</su:source>
+        <su:totalCasesInBalochistan rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">35484</su:totalCasesInBalochistan>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://su.edu.pk#BloodPressure -->
+
+
+    <owl:NamedIndividual rdf:about="http://su.edu.pk#BloodPressure">
+        <rdf:type rdf:resource="http://su.edu.pk#OtherDiseases"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://su.edu.pk#BoosterDose -->
+
+
+    <owl:NamedIndividual rdf:about="http://su.edu.pk#BoosterDose">
+        <rdf:type rdf:resource="http://su.edu.pk#Vaccination"/>
+        <su:hasBoosterDoseVac rdf:resource="http://su.edu.pk#BoosterDose"/>
+        <su:BoosterDose rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">8109984</su:BoosterDose>
+        <su:source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://covid.gov.pk</su:source>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://su.edu.pk#BordersClosed -->
+
+
+    <owl:NamedIndividual rdf:about="http://su.edu.pk#BordersClosed">
+        <rdf:type rdf:resource="http://su.edu.pk#PreventiveMeasures"/>
+        <su:hasTakenBy rdf:resource="http://su.edu.pk#BordersClosed"/>
+        <su:PreventiveMeasures>PMBordersClosed</su:PreventiveMeasures>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://su.edu.pk#BreathingIssue -->
+
+
+    <owl:NamedIndividual rdf:about="http://su.edu.pk#BreathingIssue">
+        <rdf:type rdf:resource="http://su.edu.pk#Symptoms"/>
+        <su:hasSymptoms rdf:resource="http://su.edu.pk#BreathingIssue"/>
+        <su:CovidSymptoms>SymptomBreathingIssue</su:CovidSymptoms>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://su.edu.pk#Cancer -->
+
+
+    <owl:NamedIndividual rdf:about="http://su.edu.pk#Cancer">
+        <rdf:type rdf:resource="http://su.edu.pk#OtherDiseases"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://su.edu.pk#China -->
+
+
+    <owl:NamedIndividual rdf:about="http://su.edu.pk#China">
+        <rdf:type rdf:resource="http://su.edu.pk#CovidOrigin"/>
+        <su:firstCovidSpreadFrom rdf:resource="http://su.edu.pk#China"/>
+        <su:firstCovidCases>Dec2019</su:firstCovidCases>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://su.edu.pk#CloseContact -->
+
+
+    <owl:NamedIndividual rdf:about="http://su.edu.pk#CloseContact">
+        <rdf:type rdf:resource="http://su.edu.pk#ExposureToCovid"/>
+        <su:suspectedHost rdf:resource="http://su.edu.pk#CloseContact"/>
+        <su:CovidExposure>ExposureCloseContact</su:CovidExposure>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://su.edu.pk#Cough -->
+
+
+    <owl:NamedIndividual rdf:about="http://su.edu.pk#Cough">
+        <rdf:type rdf:resource="http://su.edu.pk#SymptomsOtherThanCovid"/>
+        <su:symptomsinPatient rdf:resource="http://su.edu.pk#Cough"/>
+        <su:SymptomsOtherThanCovid>DiseaseCough</su:SymptomsOtherThanCovid>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://su.edu.pk#Deceased -->
+
+
+    <owl:NamedIndividual rdf:about="http://su.edu.pk#Deceased">
+        <rdf:type rdf:resource="http://su.edu.pk#CountryWiseStatistics"/>
+        <su:countryWise rdf:resource="http://su.edu.pk#Deceased"/>
+        <su:deceased rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">30379</su:deceased>
+        <su:source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.worldometers.info/coronavirus/country/pakistan/</su:source>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://su.edu.pk#Delta -->
+
+
+    <owl:NamedIndividual rdf:about="http://su.edu.pk#Delta">
+        <rdf:type rdf:resource="http://su.edu.pk#VariantTypes"/>
+        <su:HasVariant rdf:resource="http://su.edu.pk#Delta"/>
+        <su:VariantTypes>Delta</su:VariantTypes>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://su.edu.pk#Diarrhea -->
+
+
+    <owl:NamedIndividual rdf:about="http://su.edu.pk#Diarrhea">
+        <rdf:type rdf:resource="http://su.edu.pk#SymptomsOtherThanCovid"/>
+        <su:symptomsinPatient rdf:resource="http://su.edu.pk#Diarrhea"/>
+        <su:SymptomsOtherThanCovid>DiseaseDiarrhea</su:SymptomsOtherThanCovid>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://su.edu.pk#DryCough -->
+
+
+    <owl:NamedIndividual rdf:about="http://su.edu.pk#DryCough">
+        <rdf:type rdf:resource="http://su.edu.pk#Symptoms"/>
+        <su:hasSymptoms rdf:resource="http://su.edu.pk#DryCough"/>
+        <su:CovidSymptoms>SymptomDryCough</su:CovidSymptoms>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://su.edu.pk#FaceMasks -->
+
+
+    <owl:NamedIndividual rdf:about="http://su.edu.pk#FaceMasks">
+        <rdf:type rdf:resource="http://su.edu.pk#PreventiveMeasures"/>
+        <su:hasTakenBy rdf:resource="http://su.edu.pk#FaceMasks"/>
+        <su:PreventiveMeasures>PMFaceMasks</su:PreventiveMeasures>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://su.edu.pk#FeelingTired -->
+
+
+    <owl:NamedIndividual rdf:about="http://su.edu.pk#FeelingTired">
+        <rdf:type rdf:resource="http://su.edu.pk#Symptoms"/>
+        <su:hasSymptoms rdf:resource="http://su.edu.pk#FeelingTired"/>
+        <su:CovidSymptoms>SymptomFeelingTired</su:CovidSymptoms>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://su.edu.pk#Fever -->
+
+
+    <owl:NamedIndividual rdf:about="http://su.edu.pk#Fever">
+        <rdf:type rdf:resource="http://su.edu.pk#Symptoms"/>
+        <su:hasSymptoms rdf:resource="http://su.edu.pk#Fever"/>
+        <su:CovidSymptoms>SymptomFever</su:CovidSymptoms>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://su.edu.pk#FirstDose -->
+
+
+    <owl:NamedIndividual rdf:about="http://su.edu.pk#FirstDose">
+        <rdf:type rdf:resource="http://su.edu.pk#Vaccination"/>
+        <su:hasFirstDose rdf:resource="http://su.edu.pk#FirstDose"/>
+        <su:FirstDose rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">135030016</su:FirstDose>
+        <su:source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://covid.gov.pk</su:source>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://su.edu.pk#FirstVaccineDose -->
+
+
+    <owl:NamedIndividual rdf:about="http://su.edu.pk#FirstVaccineDose">
+        <rdf:type rdf:resource="http://su.edu.pk#Vaccination"/>
+        <su:hasFirstVac rdf:resource="http://su.edu.pk#FirstVaccineDose"/>
+        <su:firstVac>8May2021</su:firstVac>
+        <su:source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://covid.gov.pk</su:source>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://su.edu.pk#FullyVaccinated -->
+
+
+    <owl:NamedIndividual rdf:about="http://su.edu.pk#FullyVaccinated">
+        <rdf:type rdf:resource="http://su.edu.pk#Vaccination"/>
+        <su:hasFullyVaccinated rdf:resource="http://su.edu.pk#FullyVaccinated"/>
+        <su:FullyVaccinated rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">123128282</su:FullyVaccinated>
+        <su:source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://covid.gov.pk</su:source>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://su.edu.pk#Gathering -->
+
+
+    <owl:NamedIndividual rdf:about="http://su.edu.pk#Gathering">
+        <rdf:type rdf:resource="http://su.edu.pk#ExposureToCovid"/>
+        <su:suspectedHost rdf:resource="http://su.edu.pk#Gathering"/>
+        <su:CovidExposure>ExposureGathering</su:CovidExposure>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://su.edu.pk#GatheringsNotAllowed -->
+
+
+    <owl:NamedIndividual rdf:about="http://su.edu.pk#GatheringsNotAllowed">
+        <rdf:type rdf:resource="http://su.edu.pk#PreventiveMeasures"/>
+        <su:hasTakenBy rdf:resource="http://su.edu.pk#GatheringsNotAllowed"/>
+        <su:PreventiveMeasures>PMGatheringsNotAllowed</su:PreventiveMeasures>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://su.edu.pk#GilgitBaltistan -->
+
+
+    <owl:NamedIndividual rdf:about="http://su.edu.pk#GilgitBaltistan">
+        <rdf:type rdf:resource="http://su.edu.pk#TerristrialWiseStatistics"/>
+        <su:hasGilgitCases rdf:resource="http://su.edu.pk#GilgitBaltistan"/>
+        <su:source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://covid.gov.pk/</su:source>
+        <su:totalCasesInGilgit rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">11737</su:totalCasesInGilgit>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://su.edu.pk#Headache -->
+
+
+    <owl:NamedIndividual rdf:about="http://su.edu.pk#Headache">
+        <rdf:type rdf:resource="http://su.edu.pk#SymptomsOtherThanCovid"/>
+        <su:symptomsinPatient rdf:resource="http://su.edu.pk#Headache"/>
+        <su:SymptomsOtherThanCovid>DiseaseHeadache</su:SymptomsOtherThanCovid>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://su.edu.pk#InfectedCoPassenger -->
+
+
+    <owl:NamedIndividual rdf:about="http://su.edu.pk#InfectedCoPassenger">
+        <rdf:type rdf:resource="http://su.edu.pk#ExposureToCovid"/>
+        <su:suspectedHost rdf:resource="http://su.edu.pk#InfectedCoPassenger"/>
+        <su:CovidExposure>ExposureInfectedCoPassenger</su:CovidExposure>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://su.edu.pk#InfectedCoWorker -->
+
+
+    <owl:NamedIndividual rdf:about="http://su.edu.pk#InfectedCoWorker">
+        <rdf:type rdf:resource="http://su.edu.pk#ExposureToCovid"/>
+        <su:suspectedHost rdf:resource="http://su.edu.pk#InfectedCoWorker"/>
+        <su:CovidExposure>ExposureInfectedCoWorker</su:CovidExposure>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://su.edu.pk#InfectedFamilyMember -->
+
+
+    <owl:NamedIndividual rdf:about="http://su.edu.pk#InfectedFamilyMember">
+        <rdf:type rdf:resource="http://su.edu.pk#ExposureToCovid"/>
+        <su:suspectedHost rdf:resource="http://su.edu.pk#InfectedFamilyMember"/>
+        <su:CovidExposure>ExposureInfectedFamilyMember</su:CovidExposure>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://su.edu.pk#Islamabad -->
+
+
+    <owl:NamedIndividual rdf:about="http://su.edu.pk#Islamabad">
+        <rdf:type rdf:resource="http://su.edu.pk#TerristrialWiseStatistics"/>
+        <su:hasIslamabadCases rdf:resource="http://su.edu.pk#Islamabad"/>
+        <su:source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://covid.gov.pk/</su:source>
+        <su:totalCasesInIslamabad rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">135178</su:totalCasesInIslamabad>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://su.edu.pk#KPK -->
+
+
+    <owl:NamedIndividual rdf:about="http://su.edu.pk#KPK">
+        <rdf:type rdf:resource="http://su.edu.pk#ProvinceWiseStatistics"/>
+        <su:hasKPKCases rdf:resource="http://su.edu.pk#KPK"/>
+        <su:source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://covid.gov.pk/</su:source>
+        <su:totalCasesInKPK rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">219460</su:totalCasesInKPK>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://su.edu.pk#Moderna -->
+
+
+    <owl:NamedIndividual rdf:about="http://su.edu.pk#Moderna">
+        <rdf:type rdf:resource="http://su.edu.pk#Doses"/>
+        <su:hasDoseType rdf:resource="http://su.edu.pk#Moderna"/>
+        <su:DoseType>Moderna</su:DoseType>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://su.edu.pk#NasalCongestion -->
+
+
+    <owl:NamedIndividual rdf:about="http://su.edu.pk#NasalCongestion">
+        <rdf:type rdf:resource="http://su.edu.pk#Symptoms"/>
+        <su:hasSymptoms rdf:resource="http://su.edu.pk#NasalCongestion"/>
+        <su:CovidSymptoms>SymptomNasalCongestion</su:CovidSymptoms>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://su.edu.pk#None -->
+
+
+    <owl:NamedIndividual rdf:about="http://su.edu.pk#None">
+        <rdf:type rdf:resource="http://su.edu.pk#OtherDiseases"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://su.edu.pk#NovaVax -->
+
+
+    <owl:NamedIndividual rdf:about="http://su.edu.pk#NovaVax">
+        <rdf:type rdf:resource="http://su.edu.pk#Doses"/>
+        <su:hasDoseType rdf:resource="http://su.edu.pk#NovaVax"/>
+        <su:DoseType>NovaVax</su:DoseType>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://su.edu.pk#Omicron -->
+
+
+    <owl:NamedIndividual rdf:about="http://su.edu.pk#Omicron">
+        <rdf:type rdf:resource="http://su.edu.pk#VariantTypes"/>
+        <su:HasVariant rdf:resource="http://su.edu.pk#Omicron"/>
+        <su:VariantTypes>Omicron</su:VariantTypes>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://su.edu.pk#Others -->
+
+
+    <owl:NamedIndividual rdf:about="http://su.edu.pk#Others">
+        <rdf:type rdf:resource="http://su.edu.pk#OtherDiseases"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://su.edu.pk#Pain -->
+
+
+    <owl:NamedIndividual rdf:about="http://su.edu.pk#Pain">
+        <rdf:type rdf:resource="http://su.edu.pk#Symptoms"/>
+        <su:hasSymptoms rdf:resource="http://su.edu.pk#Pain"/>
+        <su:CovidSymptoms>SymptomPain</su:CovidSymptoms>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://su.edu.pk#PainInThroat -->
+
+
+    <owl:NamedIndividual rdf:about="http://su.edu.pk#PainInThroat">
+        <rdf:type rdf:resource="http://su.edu.pk#Symptoms"/>
+        <su:hasSymptoms rdf:resource="http://su.edu.pk#PainInThroat"/>
+        <su:CovidSymptoms>SymptomPainInThroat</su:CovidSymptoms>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://su.edu.pk#Pakistan -->
+
+
+    <owl:NamedIndividual rdf:about="http://su.edu.pk#Pakistan">
+        <rdf:type rdf:resource="http://su.edu.pk#Country"/>
+        <su:hasCountry rdf:resource="http://su.edu.pk#Pakistan"/>
+        <su:adultsPopPer>4.35%</su:adultsPopPer>
+        <su:childrenPopPer>34.82%</su:childrenPopPer>
+        <su:countryCode>+92</su:countryCode>
+        <su:population>220.9Million</su:population>
+        <su:youthPopPer>60.83%</su:youthPopPer>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://su.edu.pk#Pfizer -->
+
+
+    <owl:NamedIndividual rdf:about="http://su.edu.pk#Pfizer">
+        <rdf:type rdf:resource="http://su.edu.pk#Doses"/>
+        <su:hasDoseType rdf:resource="http://su.edu.pk#Pfizer"/>
+        <su:DoseType>Pfizer</su:DoseType>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://su.edu.pk#Pneumonia -->
+
+
+    <owl:NamedIndividual rdf:about="http://su.edu.pk#Pneumonia">
+        <rdf:type rdf:resource="http://su.edu.pk#SymptomsOtherThanCovid"/>
+        <su:symptomsinPatient rdf:resource="http://su.edu.pk#Pneumonia"/>
+        <su:SymptomsOtherThanCovid>DiseasePneumonia</su:SymptomsOtherThanCovid>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://su.edu.pk#Punjab -->
+
+
+    <owl:NamedIndividual rdf:about="http://su.edu.pk#Punjab">
+        <rdf:type rdf:resource="http://su.edu.pk#ProvinceWiseStatistics"/>
+        <hasPunjabCases rdf:resource="http://su.edu.pk#Punjab"/>
+        <su:source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://covid.gov.pk/</su:source>
+        <su:totalCasesInPunjab rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">506018</su:totalCasesInPunjab>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://su.edu.pk#Recovered -->
+
+
+    <owl:NamedIndividual rdf:about="http://su.edu.pk#Recovered">
+        <rdf:type rdf:resource="http://su.edu.pk#CountryWiseStatistics"/>
+        <su:countryWise rdf:resource="http://su.edu.pk#Recovered"/>
+        <su:recovered rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">1496123</su:recovered>
+        <su:source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.worldometers.info/coronavirus/country/pakistan/</su:source>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://su.edu.pk#SeverePneumonia -->
+
+
+    <owl:NamedIndividual rdf:about="http://su.edu.pk#SeverePneumonia">
+        <rdf:type rdf:resource="http://su.edu.pk#Symptoms"/>
+        <su:hasSymptoms rdf:resource="http://su.edu.pk#SeverePneumonia"/>
+        <su:CovidSymptoms>SymptomSeverePneumonia</su:CovidSymptoms>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://su.edu.pk#Sindh -->
+
+
+    <owl:NamedIndividual rdf:about="http://su.edu.pk#Sindh">
+        <rdf:type rdf:resource="http://su.edu.pk#ProvinceWiseStatistics"/>
+        <su:hasSindhCases rdf:resource="http://su.edu.pk#Sindh"/>
+        <su:source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://covid.gov.pk/</su:source>
+        <su:totalCasesInSindh rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">576769</su:totalCasesInSindh>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://su.edu.pk#SinoVac -->
+
+
+    <owl:NamedIndividual rdf:about="http://su.edu.pk#SinoVac">
+        <rdf:type rdf:resource="http://su.edu.pk#Doses"/>
+        <su:hasDoseType rdf:resource="http://su.edu.pk#SinoVac"/>
+        <su:DoseType>SinoVac</su:DoseType>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://su.edu.pk#Sinopharm -->
+
+
+    <owl:NamedIndividual rdf:about="http://su.edu.pk#Sinopharm">
+        <rdf:type rdf:resource="http://su.edu.pk#Doses"/>
+        <su:hasDoseType rdf:resource="http://su.edu.pk#Sinopharm"/>
+        <su:DoseType>Sinopharm</su:DoseType>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://su.edu.pk#SmartLockdown -->
+
+
+    <owl:NamedIndividual rdf:about="http://su.edu.pk#SmartLockdown">
+        <rdf:type rdf:resource="http://su.edu.pk#PreventiveMeasures"/>
+        <su:hasTakenBy rdf:resource="http://su.edu.pk#SmartLockdown"/>
+        <su:PreventiveMeasures>PMSmartLockDown</su:PreventiveMeasures>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://su.edu.pk#Sneezing -->
+
+
+    <owl:NamedIndividual rdf:about="http://su.edu.pk#Sneezing">
+        <rdf:type rdf:resource="http://su.edu.pk#Symptoms"/>
+        <su:hasSymptoms rdf:resource="http://su.edu.pk#Sneezing"/>
+        <su:CovidSymptoms>SymptomSneezing</su:CovidSymptoms>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://su.edu.pk#Sugar -->
+
+
+    <owl:NamedIndividual rdf:about="http://su.edu.pk#Sugar">
+        <rdf:type rdf:resource="http://su.edu.pk#OtherDiseases"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://su.edu.pk#SuspensionOfFlight -->
+
+
+    <owl:NamedIndividual rdf:about="http://su.edu.pk#SuspensionOfFlight">
+        <rdf:type rdf:resource="http://su.edu.pk#PreventiveMeasures"/>
+        <su:hasTakenBy rdf:resource="http://su.edu.pk#SuspensionOfFlight"/>
+        <su:PreventiveMeasures>PMSuspensionOfFlight</su:PreventiveMeasures>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://su.edu.pk#TotalDoses -->
+
+
+    <owl:NamedIndividual rdf:about="http://su.edu.pk#TotalDoses">
+        <rdf:type rdf:resource="http://su.edu.pk#Vaccination"/>
+        <su:hasTotalDosesAdministered rdf:resource="http://su.edu.pk#TotalDoses"/>
+        <su:source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://covid.gov.pk</su:source>
+        <su:totalDoses rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">249153531</su:totalDoses>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://su.edu.pk#confirmed -->
+
+
+    <owl:NamedIndividual rdf:about="http://su.edu.pk#confirmed">
+        <rdf:type rdf:resource="http://su.edu.pk#CountryWiseStatistics"/>
+        <su:countryWise rdf:resource="http://su.edu.pk#confirmed"/>
+        <su:confirmedCases rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">1530143</su:confirmedCases>
+        <su:source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.worldometers.info/coronavirus/country/pakistan/</su:source>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://su.edu.pk#heartAttack -->
+
+
+    <owl:NamedIndividual rdf:about="http://su.edu.pk#heartAttack">
+        <rdf:type rdf:resource="http://su.edu.pk#OtherDiseases"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://su.edu.pk#otherCommonSymptoms -->
+
+
+    <owl:NamedIndividual rdf:about="http://su.edu.pk#otherCommonSymptoms">
+        <rdf:type rdf:resource="http://su.edu.pk#SymptomsOtherThanCovid"/>
+        <su:symptomsinPatient rdf:resource="http://su.edu.pk#otherCommonSymptoms"/>
+        <su:SymptomsOtherThanCovid>CommonDiseases</su:SymptomsOtherThanCovid>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://su.edu.pk#6feetDistance -->
+
+
+    <owl:NamedIndividual rdf:about="http://su.edu.pk#6feetDistance">
+        <rdf:type rdf:resource="http://su.edu.pk#PreventiveMeasures"/>
+        <su:hasTakenBy rdf:resource="http://su.edu.pk#6feetDistance"/>
+        <su:PreventiveMeasures>PM6feetDistance</su:PreventiveMeasures>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/ -->
+
+

@@ -1,0 +1,1685 @@
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.w3.org/2001/XMLSchema#anyURI"
+    }, {
+      "@id" : "http://www.w3.org/2001/XMLSchema#string"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid4",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://su.edu.pk#Female"
+    }, {
+      "@id" : "http://su.edu.pk#Male"
+    } ]
+  } ]
+}, {
+  "@id" : "http://su.edu.pk#6feetDistance",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://su.edu.pk#PreventiveMeasures" : [ {
+    "@value" : "PM6feetDistance"
+  } ],
+  "http://su.edu.pk#hasTakenBy" : [ {
+    "@id" : "http://su.edu.pk#6feetDistance"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://su.edu.pk#PreventiveMeasures"
+  } ]
+}, {
+  "@id" : "http://su.edu.pk#AdmittedIn",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://su.edu.pk#CovidCareCenter"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://su.edu.pk#Patient"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://su.edu.pk#hasAdmittedPatient"
+  } ]
+}, {
+  "@id" : "http://su.edu.pk#Alpha",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://su.edu.pk#HasVariant" : [ {
+    "@id" : "http://su.edu.pk#Alpha"
+  } ],
+  "http://su.edu.pk#VariantTypes" : [ {
+    "@value" : "Alpha"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://su.edu.pk#VariantTypes"
+  } ]
+}, {
+  "@id" : "http://su.edu.pk#AstraZeneca",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://su.edu.pk#DoseType" : [ {
+    "@value" : "AstraZeneca"
+  } ],
+  "http://su.edu.pk#hasDoseType" : [ {
+    "@id" : "http://su.edu.pk#AstraZeneca"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://su.edu.pk#Doses"
+  } ]
+}, {
+  "@id" : "http://su.edu.pk#AzadKashmir",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://su.edu.pk#hasKashmirCases" : [ {
+    "@id" : "http://su.edu.pk#AzadKashmir"
+  } ],
+  "http://su.edu.pk#source" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#anyURI",
+    "@value" : "https://covid.gov.pk/"
+  } ],
+  "http://su.edu.pk#totalCasesInKashmir" : [ {
+    "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "@value" : "43310"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://su.edu.pk#TerristrialWiseStatistics"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://su.edu.pk#TerristrialAreas"
+  } ]
+}, {
+  "@id" : "http://su.edu.pk#Balochistan",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://su.edu.pk#hasBalochistanCases" : [ {
+    "@id" : "http://su.edu.pk#Balochistan"
+  } ],
+  "http://su.edu.pk#source" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#anyURI",
+    "@value" : "https://covid.gov.pk/"
+  } ],
+  "http://su.edu.pk#totalCasesInBalochistan" : [ {
+    "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "@value" : "35484"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://su.edu.pk#ProvinceWiseStatistics"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://su.edu.pk#Provinces"
+  } ]
+}, {
+  "@id" : "http://su.edu.pk#BloodPressure",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://su.edu.pk#OtherDiseases"
+  } ]
+}, {
+  "@id" : "http://su.edu.pk#BoosterDose",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://su.edu.pk#BoosterDose" : [ {
+    "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "@value" : "8109984"
+  } ],
+  "http://su.edu.pk#hasBoosterDoseVac" : [ {
+    "@id" : "http://su.edu.pk#BoosterDose"
+  } ],
+  "http://su.edu.pk#source" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#anyURI",
+    "@value" : "https://covid.gov.pk"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://su.edu.pk#Vaccination"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://su.edu.pk#Vaccination"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "http://su.edu.pk#BordersClosed",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://su.edu.pk#PreventiveMeasures" : [ {
+    "@value" : "PMBordersClosed"
+  } ],
+  "http://su.edu.pk#hasTakenBy" : [ {
+    "@id" : "http://su.edu.pk#BordersClosed"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://su.edu.pk#PreventiveMeasures"
+  } ]
+}, {
+  "@id" : "http://su.edu.pk#BreathingIssue",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://su.edu.pk#CovidSymptoms" : [ {
+    "@value" : "SymptomBreathingIssue"
+  } ],
+  "http://su.edu.pk#hasSymptoms" : [ {
+    "@id" : "http://su.edu.pk#BreathingIssue"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://su.edu.pk#Symptoms"
+  } ]
+}, {
+  "@id" : "http://su.edu.pk#Cancer",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://su.edu.pk#OtherDiseases"
+  } ]
+}, {
+  "@id" : "http://su.edu.pk#China",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://su.edu.pk#firstCovidCases" : [ {
+    "@value" : "Dec2019"
+  } ],
+  "http://su.edu.pk#firstCovidSpreadFrom" : [ {
+    "@id" : "http://su.edu.pk#China"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://su.edu.pk#CovidOrigin"
+  } ]
+}, {
+  "@id" : "http://su.edu.pk#CloseContact",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://su.edu.pk#CovidExposure" : [ {
+    "@value" : "ExposureCloseContact"
+  } ],
+  "http://su.edu.pk#suspectedHost" : [ {
+    "@id" : "http://su.edu.pk#CloseContact"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://su.edu.pk#ExposureToCovid"
+  } ]
+}, {
+  "@id" : "http://su.edu.pk#Cough",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://su.edu.pk#SymptomsOtherThanCovid" : [ {
+    "@value" : "DiseaseCough"
+  } ],
+  "http://su.edu.pk#symptomsinPatient" : [ {
+    "@id" : "http://su.edu.pk#Cough"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://su.edu.pk#SymptomsOtherThanCovid"
+  } ]
+}, {
+  "@id" : "http://su.edu.pk#Country",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://su.edu.pk#Place"
+  } ]
+}, {
+  "@id" : "http://su.edu.pk#CountryWiseStatistics",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://su.edu.pk#Statistics"
+  } ]
+}, {
+  "@id" : "http://su.edu.pk#CovidCareCenter",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://su.edu.pk#Organization"
+  } ]
+}, {
+  "@id" : "http://su.edu.pk#CovidExposure",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://su.edu.pk#ExposureToCovid"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://su.edu.pk#CovidOrigin",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://su.edu.pk#CovidSymptoms",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://su.edu.pk#Symptoms"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://su.edu.pk#CovidVariants",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://su.edu.pk#Deceased",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://su.edu.pk#countryWise" : [ {
+    "@id" : "http://su.edu.pk#Deceased"
+  } ],
+  "http://su.edu.pk#deceased" : [ {
+    "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "@value" : "30379"
+  } ],
+  "http://su.edu.pk#source" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#anyURI",
+    "@value" : "https://www.worldometers.info/coronavirus/country/pakistan/"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://su.edu.pk#CountryWiseStatistics"
+  } ]
+}, {
+  "@id" : "http://su.edu.pk#Delta",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://su.edu.pk#HasVariant" : [ {
+    "@id" : "http://su.edu.pk#Delta"
+  } ],
+  "http://su.edu.pk#VariantTypes" : [ {
+    "@value" : "Delta"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://su.edu.pk#VariantTypes"
+  } ]
+}, {
+  "@id" : "http://su.edu.pk#DiagnosedWithCovid",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://su.edu.pk#Patient"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://su.edu.pk#UntestedForCovid"
+  } ]
+}, {
+  "@id" : "http://su.edu.pk#Diagnosis",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://su.edu.pk#Diarrhea",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://su.edu.pk#SymptomsOtherThanCovid" : [ {
+    "@value" : "DiseaseDiarrhea"
+  } ],
+  "http://su.edu.pk#symptomsinPatient" : [ {
+    "@id" : "http://su.edu.pk#Diarrhea"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://su.edu.pk#SymptomsOtherThanCovid"
+  } ]
+}, {
+  "@id" : "http://su.edu.pk#Doctor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://su.edu.pk#HealthCareProfessionals"
+  } ]
+}, {
+  "@id" : "http://su.edu.pk#DoseType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://su.edu.pk#Doses"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://su.edu.pk#Doses",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://su.edu.pk#Vaccination"
+  } ]
+}, {
+  "@id" : "http://su.edu.pk#DryCough",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://su.edu.pk#CovidSymptoms" : [ {
+    "@value" : "SymptomDryCough"
+  } ],
+  "http://su.edu.pk#hasSymptoms" : [ {
+    "@id" : "http://su.edu.pk#DryCough"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://su.edu.pk#Symptoms"
+  } ]
+}, {
+  "@id" : "http://su.edu.pk#Entity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://su.edu.pk#ExposureToCovid",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://su.edu.pk#FaceMasks",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://su.edu.pk#PreventiveMeasures" : [ {
+    "@value" : "PMFaceMasks"
+  } ],
+  "http://su.edu.pk#hasTakenBy" : [ {
+    "@id" : "http://su.edu.pk#FaceMasks"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://su.edu.pk#PreventiveMeasures"
+  } ]
+}, {
+  "@id" : "http://su.edu.pk#FeelingTired",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://su.edu.pk#CovidSymptoms" : [ {
+    "@value" : "SymptomFeelingTired"
+  } ],
+  "http://su.edu.pk#hasSymptoms" : [ {
+    "@id" : "http://su.edu.pk#FeelingTired"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://su.edu.pk#Symptoms"
+  } ]
+}, {
+  "@id" : "http://su.edu.pk#Female",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://su.edu.pk#Person"
+  } ]
+}, {
+  "@id" : "http://su.edu.pk#Fever",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://su.edu.pk#CovidSymptoms" : [ {
+    "@value" : "SymptomFever"
+  } ],
+  "http://su.edu.pk#hasSymptoms" : [ {
+    "@id" : "http://su.edu.pk#Fever"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://su.edu.pk#Symptoms"
+  } ]
+}, {
+  "@id" : "http://su.edu.pk#FirstDose",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://su.edu.pk#FirstDose" : [ {
+    "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "@value" : "135030016"
+  } ],
+  "http://su.edu.pk#hasFirstDose" : [ {
+    "@id" : "http://su.edu.pk#FirstDose"
+  } ],
+  "http://su.edu.pk#source" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#anyURI",
+    "@value" : "https://covid.gov.pk"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://su.edu.pk#Vaccination"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://su.edu.pk#Vaccination"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "http://su.edu.pk#FirstVaccineDose",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://su.edu.pk#firstVac" : [ {
+    "@value" : "8May2021"
+  } ],
+  "http://su.edu.pk#hasFirstVac" : [ {
+    "@id" : "http://su.edu.pk#FirstVaccineDose"
+  } ],
+  "http://su.edu.pk#source" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#anyURI",
+    "@value" : "https://covid.gov.pk"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://su.edu.pk#Vaccination"
+  } ]
+}, {
+  "@id" : "http://su.edu.pk#FullyVaccinated",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://su.edu.pk#FullyVaccinated" : [ {
+    "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "@value" : "123128282"
+  } ],
+  "http://su.edu.pk#hasFullyVaccinated" : [ {
+    "@id" : "http://su.edu.pk#FullyVaccinated"
+  } ],
+  "http://su.edu.pk#source" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#anyURI",
+    "@value" : "https://covid.gov.pk"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://su.edu.pk#Vaccination"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://su.edu.pk#Vaccination"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "http://su.edu.pk#Gathering",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://su.edu.pk#CovidExposure" : [ {
+    "@value" : "ExposureGathering"
+  } ],
+  "http://su.edu.pk#suspectedHost" : [ {
+    "@id" : "http://su.edu.pk#Gathering"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://su.edu.pk#ExposureToCovid"
+  } ]
+}, {
+  "@id" : "http://su.edu.pk#GatheringsNotAllowed",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://su.edu.pk#PreventiveMeasures" : [ {
+    "@value" : "PMGatheringsNotAllowed"
+  } ],
+  "http://su.edu.pk#hasTakenBy" : [ {
+    "@id" : "http://su.edu.pk#GatheringsNotAllowed"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://su.edu.pk#PreventiveMeasures"
+  } ]
+}, {
+  "@id" : "http://su.edu.pk#GenderType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid4"
+  } ]
+}, {
+  "@id" : "http://su.edu.pk#GilgitBaltistan",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://su.edu.pk#hasGilgitCases" : [ {
+    "@id" : "http://su.edu.pk#GilgitBaltistan"
+  } ],
+  "http://su.edu.pk#source" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#anyURI",
+    "@value" : "https://covid.gov.pk/"
+  } ],
+  "http://su.edu.pk#totalCasesInGilgit" : [ {
+    "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "@value" : "11737"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://su.edu.pk#TerristrialWiseStatistics"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://su.edu.pk#TerristrialAreas"
+  } ]
+}, {
+  "@id" : "http://su.edu.pk#HasVariant",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://su.edu.pk#CovidVariants"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://su.edu.pk#VariantTypes"
+  } ]
+}, {
+  "@id" : "http://su.edu.pk#Headache",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://su.edu.pk#SymptomsOtherThanCovid" : [ {
+    "@value" : "DiseaseHeadache"
+  } ],
+  "http://su.edu.pk#symptomsinPatient" : [ {
+    "@id" : "http://su.edu.pk#Headache"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://su.edu.pk#SymptomsOtherThanCovid"
+  } ]
+}, {
+  "@id" : "http://su.edu.pk#HealthCareProfessionals",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://su.edu.pk#Person"
+  } ]
+}, {
+  "@id" : "http://su.edu.pk#HealthOrganization",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://su.edu.pk#Organization"
+  } ]
+}, {
+  "@id" : "http://su.edu.pk#InfectedCoPassenger",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://su.edu.pk#CovidExposure" : [ {
+    "@value" : "ExposureInfectedCoPassenger"
+  } ],
+  "http://su.edu.pk#suspectedHost" : [ {
+    "@id" : "http://su.edu.pk#InfectedCoPassenger"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://su.edu.pk#ExposureToCovid"
+  } ]
+}, {
+  "@id" : "http://su.edu.pk#InfectedCoWorker",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://su.edu.pk#CovidExposure" : [ {
+    "@value" : "ExposureInfectedCoWorker"
+  } ],
+  "http://su.edu.pk#suspectedHost" : [ {
+    "@id" : "http://su.edu.pk#InfectedCoWorker"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://su.edu.pk#ExposureToCovid"
+  } ]
+}, {
+  "@id" : "http://su.edu.pk#InfectedFamilyMember",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://su.edu.pk#CovidExposure" : [ {
+    "@value" : "ExposureInfectedFamilyMember"
+  } ],
+  "http://su.edu.pk#suspectedHost" : [ {
+    "@id" : "http://su.edu.pk#InfectedFamilyMember"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://su.edu.pk#ExposureToCovid"
+  } ]
+}, {
+  "@id" : "http://su.edu.pk#IsPatientSufferFromCovid",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://su.edu.pk#Patient"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ]
+}, {
+  "@id" : "http://su.edu.pk#IsPatientVaccinated",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://su.edu.pk#Patient"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ]
+}, {
+  "@id" : "http://su.edu.pk#Islamabad",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://su.edu.pk#hasIslamabadCases" : [ {
+    "@id" : "http://su.edu.pk#Islamabad"
+  } ],
+  "http://su.edu.pk#source" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#anyURI",
+    "@value" : "https://covid.gov.pk/"
+  } ],
+  "http://su.edu.pk#totalCasesInIslamabad" : [ {
+    "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "@value" : "135178"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://su.edu.pk#TerristrialWiseStatistics"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://su.edu.pk#TerristrialAreas"
+  } ]
+}, {
+  "@id" : "http://su.edu.pk#KPK",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://su.edu.pk#hasKPKCases" : [ {
+    "@id" : "http://su.edu.pk#KPK"
+  } ],
+  "http://su.edu.pk#source" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#anyURI",
+    "@value" : "https://covid.gov.pk/"
+  } ],
+  "http://su.edu.pk#totalCasesInKPK" : [ {
+    "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "@value" : "219460"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://su.edu.pk#ProvinceWiseStatistics"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://su.edu.pk#Provinces"
+  } ]
+}, {
+  "@id" : "http://su.edu.pk#Male",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://su.edu.pk#Person"
+  } ]
+}, {
+  "@id" : "http://su.edu.pk#Mild",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://su.edu.pk#Diagnosis"
+  } ]
+}, {
+  "@id" : "http://su.edu.pk#Moderate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://su.edu.pk#Diagnosis"
+  } ]
+}, {
+  "@id" : "http://su.edu.pk#Moderna",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://su.edu.pk#DoseType" : [ {
+    "@value" : "Moderna"
+  } ],
+  "http://su.edu.pk#hasDoseType" : [ {
+    "@id" : "http://su.edu.pk#Moderna"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://su.edu.pk#Doses"
+  } ]
+}, {
+  "@id" : "http://su.edu.pk#NCOC",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://su.edu.pk#Organization"
+  } ]
+}, {
+  "@id" : "http://su.edu.pk#NasalCongestion",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://su.edu.pk#CovidSymptoms" : [ {
+    "@value" : "SymptomNasalCongestion"
+  } ],
+  "http://su.edu.pk#hasSymptoms" : [ {
+    "@id" : "http://su.edu.pk#NasalCongestion"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://su.edu.pk#Symptoms"
+  } ]
+}, {
+  "@id" : "http://su.edu.pk#NonVaccinated",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://su.edu.pk#Patient"
+  } ]
+}, {
+  "@id" : "http://su.edu.pk#None",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://su.edu.pk#OtherDiseases"
+  } ]
+}, {
+  "@id" : "http://su.edu.pk#NovaVax",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://su.edu.pk#DoseType" : [ {
+    "@value" : "NovaVax"
+  } ],
+  "http://su.edu.pk#hasDoseType" : [ {
+    "@id" : "http://su.edu.pk#NovaVax"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://su.edu.pk#Doses"
+  } ]
+}, {
+  "@id" : "http://su.edu.pk#Nurse",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://su.edu.pk#HealthCareProfessionals"
+  } ]
+}, {
+  "@id" : "http://su.edu.pk#Omicron",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://su.edu.pk#HasVariant" : [ {
+    "@id" : "http://su.edu.pk#Omicron"
+  } ],
+  "http://su.edu.pk#VariantTypes" : [ {
+    "@value" : "Omicron"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://su.edu.pk#VariantTypes"
+  } ]
+}, {
+  "@id" : "http://su.edu.pk#Organization",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://su.edu.pk#Entity"
+  } ]
+}, {
+  "@id" : "http://su.edu.pk#OtherDiseases",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://su.edu.pk#Patient"
+  } ]
+}, {
+  "@id" : "http://su.edu.pk#Others",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://su.edu.pk#OtherDiseases"
+  } ]
+}, {
+  "@id" : "http://su.edu.pk#Pain",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://su.edu.pk#CovidSymptoms" : [ {
+    "@value" : "SymptomPain"
+  } ],
+  "http://su.edu.pk#hasSymptoms" : [ {
+    "@id" : "http://su.edu.pk#Pain"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://su.edu.pk#Symptoms"
+  } ]
+}, {
+  "@id" : "http://su.edu.pk#PainInThroat",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://su.edu.pk#CovidSymptoms" : [ {
+    "@value" : "SymptomPainInThroat"
+  } ],
+  "http://su.edu.pk#hasSymptoms" : [ {
+    "@id" : "http://su.edu.pk#PainInThroat"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://su.edu.pk#Symptoms"
+  } ]
+}, {
+  "@id" : "http://su.edu.pk#Pakistan",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://su.edu.pk#adultsPopPer" : [ {
+    "@value" : "4.35%"
+  } ],
+  "http://su.edu.pk#childrenPopPer" : [ {
+    "@value" : "34.82%"
+  } ],
+  "http://su.edu.pk#countryCode" : [ {
+    "@value" : "+92"
+  } ],
+  "http://su.edu.pk#hasCountry" : [ {
+    "@id" : "http://su.edu.pk#Pakistan"
+  } ],
+  "http://su.edu.pk#population" : [ {
+    "@value" : "220.9Million"
+  } ],
+  "http://su.edu.pk#youthPopPer" : [ {
+    "@value" : "60.83%"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://su.edu.pk#Country"
+  } ]
+}, {
+  "@id" : "http://su.edu.pk#Patient",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://su.edu.pk#Person"
+  } ]
+}, {
+  "@id" : "http://su.edu.pk#Person",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://su.edu.pk#Entity"
+  } ]
+}, {
+  "@id" : "http://su.edu.pk#Pfizer",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://su.edu.pk#DoseType" : [ {
+    "@value" : "Pfizer"
+  } ],
+  "http://su.edu.pk#hasDoseType" : [ {
+    "@id" : "http://su.edu.pk#Pfizer"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://su.edu.pk#Doses"
+  } ]
+}, {
+  "@id" : "http://su.edu.pk#Place",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://su.edu.pk#Pneumonia",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://su.edu.pk#SymptomsOtherThanCovid" : [ {
+    "@value" : "DiseasePneumonia"
+  } ],
+  "http://su.edu.pk#symptomsinPatient" : [ {
+    "@id" : "http://su.edu.pk#Pneumonia"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://su.edu.pk#SymptomsOtherThanCovid"
+  } ]
+}, {
+  "@id" : "http://su.edu.pk#PopulationPercentage",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://su.edu.pk#Country"
+  } ]
+}, {
+  "@id" : "http://su.edu.pk#PreventiveMeasures",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://su.edu.pk#PreventiveMeasures"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://su.edu.pk#ProvinceWiseStatistics",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://su.edu.pk#Statistics"
+  } ]
+}, {
+  "@id" : "http://su.edu.pk#Provinces",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://su.edu.pk#Place"
+  } ]
+}, {
+  "@id" : "http://su.edu.pk#Punjab",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://su.edu.pk#source" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#anyURI",
+    "@value" : "https://covid.gov.pk/"
+  } ],
+  "http://su.edu.pk#totalCasesInPunjab" : [ {
+    "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "@value" : "506018"
+  } ],
+  "http://www.semanticweb.org/mujtabacomputers/ontologies/2022/4/untitled-ontology-10#hasPunjabCases" : [ {
+    "@id" : "http://su.edu.pk#Punjab"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://su.edu.pk#ProvinceWiseStatistics"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://su.edu.pk#Provinces"
+  } ]
+}, {
+  "@id" : "http://su.edu.pk#Recovered",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://su.edu.pk#countryWise" : [ {
+    "@id" : "http://su.edu.pk#Recovered"
+  } ],
+  "http://su.edu.pk#recovered" : [ {
+    "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "@value" : "1496123"
+  } ],
+  "http://su.edu.pk#source" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#anyURI",
+    "@value" : "https://www.worldometers.info/coronavirus/country/pakistan/"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://su.edu.pk#CountryWiseStatistics"
+  } ]
+}, {
+  "@id" : "http://su.edu.pk#Severe",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://su.edu.pk#Diagnosis"
+  } ]
+}, {
+  "@id" : "http://su.edu.pk#SeverePneumonia",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://su.edu.pk#CovidSymptoms" : [ {
+    "@value" : "SymptomSeverePneumonia"
+  } ],
+  "http://su.edu.pk#hasSymptoms" : [ {
+    "@id" : "http://su.edu.pk#SeverePneumonia"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://su.edu.pk#Symptoms"
+  } ]
+}, {
+  "@id" : "http://su.edu.pk#Sindh",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://su.edu.pk#hasSindhCases" : [ {
+    "@id" : "http://su.edu.pk#Sindh"
+  } ],
+  "http://su.edu.pk#source" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#anyURI",
+    "@value" : "https://covid.gov.pk/"
+  } ],
+  "http://su.edu.pk#totalCasesInSindh" : [ {
+    "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "@value" : "576769"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://su.edu.pk#ProvinceWiseStatistics"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://su.edu.pk#Provinces"
+  } ]
+}, {
+  "@id" : "http://su.edu.pk#SinoVac",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://su.edu.pk#DoseType" : [ {
+    "@value" : "SinoVac"
+  } ],
+  "http://su.edu.pk#hasDoseType" : [ {
+    "@id" : "http://su.edu.pk#SinoVac"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://su.edu.pk#Doses"
+  } ]
+}, {
+  "@id" : "http://su.edu.pk#Sinopharm",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://su.edu.pk#DoseType" : [ {
+    "@value" : "Sinopharm"
+  } ],
+  "http://su.edu.pk#hasDoseType" : [ {
+    "@id" : "http://su.edu.pk#Sinopharm"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://su.edu.pk#Doses"
+  } ]
+}, {
+  "@id" : "http://su.edu.pk#SmartLockdown",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://su.edu.pk#PreventiveMeasures" : [ {
+    "@value" : "PMSmartLockDown"
+  } ],
+  "http://su.edu.pk#hasTakenBy" : [ {
+    "@id" : "http://su.edu.pk#SmartLockdown"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://su.edu.pk#PreventiveMeasures"
+  } ]
+}, {
+  "@id" : "http://su.edu.pk#Sneezing",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://su.edu.pk#CovidSymptoms" : [ {
+    "@value" : "SymptomSneezing"
+  } ],
+  "http://su.edu.pk#hasSymptoms" : [ {
+    "@id" : "http://su.edu.pk#Sneezing"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://su.edu.pk#Symptoms"
+  } ]
+}, {
+  "@id" : "http://su.edu.pk#Statistics",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://su.edu.pk#Sugar",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://su.edu.pk#OtherDiseases"
+  } ]
+}, {
+  "@id" : "http://su.edu.pk#SuspensionOfFlight",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://su.edu.pk#PreventiveMeasures" : [ {
+    "@value" : "PMSuspensionOfFlight"
+  } ],
+  "http://su.edu.pk#hasTakenBy" : [ {
+    "@id" : "http://su.edu.pk#SuspensionOfFlight"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://su.edu.pk#PreventiveMeasures"
+  } ]
+}, {
+  "@id" : "http://su.edu.pk#Symptoms",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://su.edu.pk#SymptomsOtherThanCovid"
+  } ]
+}, {
+  "@id" : "http://su.edu.pk#SymptomsOtherThanCovid",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://su.edu.pk#SymptomsOtherThanCovid"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://su.edu.pk#TerristrialAreas",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://su.edu.pk#Place"
+  } ]
+}, {
+  "@id" : "http://su.edu.pk#TerristrialWiseStatistics",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://su.edu.pk#Statistics"
+  } ]
+}, {
+  "@id" : "http://su.edu.pk#TotalDoses",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://su.edu.pk#hasTotalDosesAdministered" : [ {
+    "@id" : "http://su.edu.pk#TotalDoses"
+  } ],
+  "http://su.edu.pk#source" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#anyURI",
+    "@value" : "https://covid.gov.pk"
+  } ],
+  "http://su.edu.pk#totalDoses" : [ {
+    "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "@value" : "249153531"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://su.edu.pk#Vaccination"
+  } ]
+}, {
+  "@id" : "http://su.edu.pk#UntestedForCovid",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://su.edu.pk#Person"
+  } ]
+}, {
+  "@id" : "http://su.edu.pk#Vaccinated",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://su.edu.pk#Patient"
+  } ]
+}, {
+  "@id" : "http://su.edu.pk#Vaccination",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://su.edu.pk#VariantTypes",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://su.edu.pk#VariantTypes"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://su.edu.pk#CovidVariants"
+  } ]
+}, {
+  "@id" : "http://su.edu.pk#adultsPopPer",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://su.edu.pk#Country"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#float"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://su.edu.pk#PopulationPercentage"
+  } ]
+}, {
+  "@id" : "http://su.edu.pk#caseId",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://su.edu.pk#DiagnosedWithCovid"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://su.edu.pk#cases",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://su.edu.pk#Statistics"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://su.edu.pk#metrics"
+  } ]
+}, {
+  "@id" : "http://su.edu.pk#childrenPopPer",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://su.edu.pk#Country"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#float"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://su.edu.pk#PopulationPercentage"
+  } ]
+}, {
+  "@id" : "http://su.edu.pk#confirmed",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://su.edu.pk#confirmedCases" : [ {
+    "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "@value" : "1530143"
+  } ],
+  "http://su.edu.pk#countryWise" : [ {
+    "@id" : "http://su.edu.pk#confirmed"
+  } ],
+  "http://su.edu.pk#source" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#anyURI",
+    "@value" : "https://www.worldometers.info/coronavirus/country/pakistan/"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://su.edu.pk#CountryWiseStatistics"
+  } ]
+}, {
+  "@id" : "http://su.edu.pk#confirmedCases",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://su.edu.pk#Statistics"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://su.edu.pk#cases"
+  } ]
+}, {
+  "@id" : "http://su.edu.pk#contractedVirusFrom",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://su.edu.pk#Person"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://su.edu.pk#Person"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://su.edu.pk#passedVirusTo"
+  } ]
+}, {
+  "@id" : "http://su.edu.pk#countryCode",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://su.edu.pk#Country"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://su.edu.pk#countryWise",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://su.edu.pk#Country"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://su.edu.pk#CountryWiseStatistics"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://su.edu.pk#hasStatistics"
+  } ]
+}, {
+  "@id" : "http://su.edu.pk#deceased",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://su.edu.pk#Statistics"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://su.edu.pk#cases"
+  } ]
+}, {
+  "@id" : "http://su.edu.pk#firstCovidCases",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://su.edu.pk#CovidOrigin"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "http://su.edu.pk#firstCovidSpreadFrom",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://su.edu.pk#CovidOrigin"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://su.edu.pk#CovidOrigin"
+  } ]
+}, {
+  "@id" : "http://su.edu.pk#firstVac",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://su.edu.pk#Vaccination"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "http://su.edu.pk#hasAdmittedPatient",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://su.edu.pk#Patient"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://su.edu.pk#CovidCareCenter"
+  } ]
+}, {
+  "@id" : "http://su.edu.pk#hasBalochistanCases",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://su.edu.pk#Balochistan"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://su.edu.pk#Provinces"
+  } ]
+}, {
+  "@id" : "http://su.edu.pk#hasBoosterDoseVac",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://su.edu.pk#Statistics"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://su.edu.pk#Vaccination"
+  } ]
+}, {
+  "@id" : "http://su.edu.pk#hasCausedAnySecondaryInfections",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://su.edu.pk#Patient"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ]
+}, {
+  "@id" : "http://su.edu.pk#hasCountry",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://su.edu.pk#Country"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://su.edu.pk#Country"
+  } ]
+}, {
+  "@id" : "http://su.edu.pk#hasDiagnosis",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://su.edu.pk#Patient"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://su.edu.pk#Diagnosis"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://su.edu.pk#isDiagnosisOf"
+  } ]
+}, {
+  "@id" : "http://su.edu.pk#hasDose",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://su.edu.pk#Patient"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://su.edu.pk#Vaccination"
+  } ]
+}, {
+  "@id" : "http://su.edu.pk#hasDoseType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://su.edu.pk#Vaccination"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://su.edu.pk#Doses"
+  } ]
+}, {
+  "@id" : "http://su.edu.pk#hasFirstDose",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://su.edu.pk#Statistics"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://su.edu.pk#Vaccination"
+  } ]
+}, {
+  "@id" : "http://su.edu.pk#hasFirstVac",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://su.edu.pk#Vaccination"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://su.edu.pk#Vaccination"
+  } ]
+}, {
+  "@id" : "http://su.edu.pk#hasFullyVaccinated",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://su.edu.pk#Statistics"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://su.edu.pk#Vaccination"
+  } ]
+}, {
+  "@id" : "http://su.edu.pk#hasGender",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://su.edu.pk#Person"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://su.edu.pk#GenderType"
+  } ]
+}, {
+  "@id" : "http://su.edu.pk#hasGilgitCases",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://su.edu.pk#GilgitBaltistan"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://su.edu.pk#TerristrialAreas"
+  } ]
+}, {
+  "@id" : "http://su.edu.pk#hasIslamabadCases",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://su.edu.pk#Islamabad"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://su.edu.pk#TerristrialAreas"
+  } ]
+}, {
+  "@id" : "http://su.edu.pk#hasKPKCases",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://su.edu.pk#KPK"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://su.edu.pk#Provinces"
+  } ]
+}, {
+  "@id" : "http://su.edu.pk#hasKashmirCases",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://su.edu.pk#AzadKashmir"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://su.edu.pk#TerristrialAreas"
+  } ]
+}, {
+  "@id" : "http://su.edu.pk#hasOtherDisease",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://su.edu.pk#Patient"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://su.edu.pk#OtherDiseases"
+  } ]
+}, {
+  "@id" : "http://su.edu.pk#hasSindhCases",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://su.edu.pk#Sindh"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://su.edu.pk#Provinces"
+  } ]
+}, {
+  "@id" : "http://su.edu.pk#hasStatistics",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://su.edu.pk#Place"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://su.edu.pk#Statistics"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://su.edu.pk#isCovid-19StatisticsOf"
+  } ]
+}, {
+  "@id" : "http://su.edu.pk#hasSymptoms",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://su.edu.pk#Patient"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://su.edu.pk#Symptoms"
+  } ]
+}, {
+  "@id" : "http://su.edu.pk#hasTakenBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://su.edu.pk#PreventiveMeasures"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://su.edu.pk#NCOC"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://su.edu.pk#took"
+  } ]
+}, {
+  "@id" : "http://su.edu.pk#hasTotalDosesAdministered",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://su.edu.pk#Statistics"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://su.edu.pk#Vaccination"
+  } ]
+}, {
+  "@id" : "http://su.edu.pk#heartAttack",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://su.edu.pk#OtherDiseases"
+  } ]
+}, {
+  "@id" : "http://su.edu.pk#isCovid-19StatisticsOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://su.edu.pk#Statistics"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://su.edu.pk#Place"
+  } ]
+}, {
+  "@id" : "http://su.edu.pk#isDiagnosisOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://su.edu.pk#Diagnosis"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://su.edu.pk#Patient"
+  } ]
+}, {
+  "@id" : "http://su.edu.pk#metrics",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://su.edu.pk#Statistics"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ]
+}, {
+  "@id" : "http://su.edu.pk#nationality",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://su.edu.pk#Person"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://su.edu.pk#Country"
+  } ]
+}, {
+  "@id" : "http://su.edu.pk#otherCommonSymptoms",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://su.edu.pk#SymptomsOtherThanCovid" : [ {
+    "@value" : "CommonDiseases"
+  } ],
+  "http://su.edu.pk#symptomsinPatient" : [ {
+    "@id" : "http://su.edu.pk#otherCommonSymptoms"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://su.edu.pk#SymptomsOtherThanCovid"
+  } ]
+}, {
+  "@id" : "http://su.edu.pk#otherDiseases",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://su.edu.pk#Patient"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ]
+}, {
+  "@id" : "http://su.edu.pk#passedVirusTo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://su.edu.pk#Person"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://su.edu.pk#Person"
+  } ]
+}, {
+  "@id" : "http://su.edu.pk#place",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://su.edu.pk#Place"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://su.edu.pk#population",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://su.edu.pk#Country"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://su.edu.pk#provinceWise",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://su.edu.pk#Provinces"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://su.edu.pk#ProvinceWiseStatistics"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://su.edu.pk#hasStatistics"
+  } ]
+}, {
+  "@id" : "http://su.edu.pk#recovered",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://su.edu.pk#Statistics"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://su.edu.pk#cases"
+  } ]
+}, {
+  "@id" : "http://su.edu.pk#source",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://su.edu.pk#Statistics"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "_:genid1"
+  } ]
+}, {
+  "@id" : "http://su.edu.pk#suspectedHost",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://su.edu.pk#ExposureToCovid"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://su.edu.pk#Person"
+  } ]
+}, {
+  "@id" : "http://su.edu.pk#suspectedReasonsOfCovid-19",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://su.edu.pk#Patient"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://su.edu.pk#ExposureToCovid"
+  } ]
+}, {
+  "@id" : "http://su.edu.pk#symptomsinPatient",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://su.edu.pk#Patient"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://su.edu.pk#SymptomsOtherThanCovid"
+  } ]
+}, {
+  "@id" : "http://su.edu.pk#terristrialWise",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://su.edu.pk#TerristrialAreas"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://su.edu.pk#TerristrialWiseStatistics"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://su.edu.pk#hasStatistics"
+  } ]
+}, {
+  "@id" : "http://su.edu.pk#took",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://su.edu.pk#NCOC"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://su.edu.pk#PreventiveMeasures"
+  } ]
+}, {
+  "@id" : "http://su.edu.pk#totalCasesInBalochistan",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://su.edu.pk#Balochistan"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ]
+}, {
+  "@id" : "http://su.edu.pk#totalCasesInGilgit",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://su.edu.pk#GilgitBaltistan"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ]
+}, {
+  "@id" : "http://su.edu.pk#totalCasesInIslamabad",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://su.edu.pk#Islamabad"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ]
+}, {
+  "@id" : "http://su.edu.pk#totalCasesInKPK",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://su.edu.pk#KPK"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ]
+}, {
+  "@id" : "http://su.edu.pk#totalCasesInKashmir",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://su.edu.pk#AzadKashmir"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ]
+}, {
+  "@id" : "http://su.edu.pk#totalCasesInPunjab",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://su.edu.pk#Punjab"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ]
+}, {
+  "@id" : "http://su.edu.pk#totalCasesInSindh",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://su.edu.pk#Sindh"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ]
+}, {
+  "@id" : "http://su.edu.pk#totalDoses",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://su.edu.pk#Vaccination"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "http://su.edu.pk#wasSpreadBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://su.edu.pk#DiagnosedWithCovid"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://su.edu.pk#Country"
+  } ]
+}, {
+  "@id" : "http://su.edu.pk#youthPopPer",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://su.edu.pk#Country"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#float"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://su.edu.pk#PopulationPercentage"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mujtabacomputers/ontologies/2022/4/untitled-ontology-10",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ]
+}, {
+  "@id" : "http://www.semanticweb.org/mujtabacomputers/ontologies/2022/4/untitled-ontology-10#hasPunjabCases",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://su.edu.pk#Punjab"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://su.edu.pk#Provinces"
+  } ]
+} ]

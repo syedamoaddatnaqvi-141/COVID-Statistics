@@ -1,0 +1,967 @@
+<http://www.semanticweb.org/mujtabacomputers/ontologies/2022/4/untitled-ontology-10> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://su.edu.pk#AdmittedIn
+<http://su.edu.pk#AdmittedIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://su.edu.pk#AdmittedIn> <http://www.w3.org/2002/07/owl#inverseOf> <http://su.edu.pk#hasAdmittedPatient> .
+<http://su.edu.pk#AdmittedIn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://su.edu.pk#CovidCareCenter> .
+<http://su.edu.pk#AdmittedIn> <http://www.w3.org/2000/01/rdf-schema#range> <http://su.edu.pk#Patient> .
+# 
+# http://su.edu.pk#HasVariant
+<http://su.edu.pk#HasVariant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://su.edu.pk#HasVariant> <http://www.w3.org/2000/01/rdf-schema#domain> <http://su.edu.pk#CovidVariants> .
+<http://su.edu.pk#HasVariant> <http://www.w3.org/2000/01/rdf-schema#range> <http://su.edu.pk#VariantTypes> .
+# 
+# http://su.edu.pk#contractedVirusFrom
+<http://su.edu.pk#contractedVirusFrom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://su.edu.pk#contractedVirusFrom> <http://www.w3.org/2002/07/owl#inverseOf> <http://su.edu.pk#passedVirusTo> .
+<http://su.edu.pk#contractedVirusFrom> <http://www.w3.org/2000/01/rdf-schema#domain> <http://su.edu.pk#Person> .
+<http://su.edu.pk#contractedVirusFrom> <http://www.w3.org/2000/01/rdf-schema#range> <http://su.edu.pk#Person> .
+# 
+# http://su.edu.pk#countryWise
+<http://su.edu.pk#countryWise> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://su.edu.pk#countryWise> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://su.edu.pk#hasStatistics> .
+<http://su.edu.pk#countryWise> <http://www.w3.org/2000/01/rdf-schema#domain> <http://su.edu.pk#Country> .
+<http://su.edu.pk#countryWise> <http://www.w3.org/2000/01/rdf-schema#range> <http://su.edu.pk#CountryWiseStatistics> .
+# 
+# http://su.edu.pk#firstCovidSpreadFrom
+<http://su.edu.pk#firstCovidSpreadFrom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://su.edu.pk#firstCovidSpreadFrom> <http://www.w3.org/2000/01/rdf-schema#domain> <http://su.edu.pk#CovidOrigin> .
+<http://su.edu.pk#firstCovidSpreadFrom> <http://www.w3.org/2000/01/rdf-schema#range> <http://su.edu.pk#CovidOrigin> .
+# 
+# http://su.edu.pk#hasAdmittedPatient
+<http://su.edu.pk#hasAdmittedPatient> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://su.edu.pk#hasAdmittedPatient> <http://www.w3.org/2000/01/rdf-schema#domain> <http://su.edu.pk#Patient> .
+<http://su.edu.pk#hasAdmittedPatient> <http://www.w3.org/2000/01/rdf-schema#range> <http://su.edu.pk#CovidCareCenter> .
+# 
+# http://su.edu.pk#hasBalochistanCases
+<http://su.edu.pk#hasBalochistanCases> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://su.edu.pk#hasBalochistanCases> <http://www.w3.org/2000/01/rdf-schema#domain> <http://su.edu.pk#Balochistan> .
+<http://su.edu.pk#hasBalochistanCases> <http://www.w3.org/2000/01/rdf-schema#range> <http://su.edu.pk#Provinces> .
+# 
+# http://su.edu.pk#hasBoosterDoseVac
+<http://su.edu.pk#hasBoosterDoseVac> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://su.edu.pk#hasBoosterDoseVac> <http://www.w3.org/2000/01/rdf-schema#domain> <http://su.edu.pk#Statistics> .
+<http://su.edu.pk#hasBoosterDoseVac> <http://www.w3.org/2000/01/rdf-schema#range> <http://su.edu.pk#Vaccination> .
+# 
+# http://su.edu.pk#hasCountry
+<http://su.edu.pk#hasCountry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://su.edu.pk#hasCountry> <http://www.w3.org/2000/01/rdf-schema#domain> <http://su.edu.pk#Country> .
+<http://su.edu.pk#hasCountry> <http://www.w3.org/2000/01/rdf-schema#range> <http://su.edu.pk#Country> .
+# 
+# http://su.edu.pk#hasDiagnosis
+<http://su.edu.pk#hasDiagnosis> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://su.edu.pk#hasDiagnosis> <http://www.w3.org/2002/07/owl#inverseOf> <http://su.edu.pk#isDiagnosisOf> .
+<http://su.edu.pk#hasDiagnosis> <http://www.w3.org/2000/01/rdf-schema#domain> <http://su.edu.pk#Patient> .
+<http://su.edu.pk#hasDiagnosis> <http://www.w3.org/2000/01/rdf-schema#range> <http://su.edu.pk#Diagnosis> .
+# 
+# http://su.edu.pk#hasDose
+<http://su.edu.pk#hasDose> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://su.edu.pk#hasDose> <http://www.w3.org/2000/01/rdf-schema#domain> <http://su.edu.pk#Patient> .
+<http://su.edu.pk#hasDose> <http://www.w3.org/2000/01/rdf-schema#range> <http://su.edu.pk#Vaccination> .
+# 
+# http://su.edu.pk#hasDoseType
+<http://su.edu.pk#hasDoseType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://su.edu.pk#hasDoseType> <http://www.w3.org/2000/01/rdf-schema#domain> <http://su.edu.pk#Vaccination> .
+<http://su.edu.pk#hasDoseType> <http://www.w3.org/2000/01/rdf-schema#range> <http://su.edu.pk#Doses> .
+# 
+# http://su.edu.pk#hasFirstDose
+<http://su.edu.pk#hasFirstDose> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://su.edu.pk#hasFirstDose> <http://www.w3.org/2000/01/rdf-schema#domain> <http://su.edu.pk#Statistics> .
+<http://su.edu.pk#hasFirstDose> <http://www.w3.org/2000/01/rdf-schema#range> <http://su.edu.pk#Vaccination> .
+# 
+# http://su.edu.pk#hasFirstVac
+<http://su.edu.pk#hasFirstVac> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://su.edu.pk#hasFirstVac> <http://www.w3.org/2000/01/rdf-schema#domain> <http://su.edu.pk#Vaccination> .
+<http://su.edu.pk#hasFirstVac> <http://www.w3.org/2000/01/rdf-schema#range> <http://su.edu.pk#Vaccination> .
+# 
+# http://su.edu.pk#hasFullyVaccinated
+<http://su.edu.pk#hasFullyVaccinated> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://su.edu.pk#hasFullyVaccinated> <http://www.w3.org/2000/01/rdf-schema#domain> <http://su.edu.pk#Statistics> .
+<http://su.edu.pk#hasFullyVaccinated> <http://www.w3.org/2000/01/rdf-schema#range> <http://su.edu.pk#Vaccination> .
+# 
+# http://su.edu.pk#hasGender
+<http://su.edu.pk#hasGender> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://su.edu.pk#hasGender> <http://www.w3.org/2000/01/rdf-schema#domain> <http://su.edu.pk#Person> .
+<http://su.edu.pk#hasGender> <http://www.w3.org/2000/01/rdf-schema#range> <http://su.edu.pk#GenderType> .
+# 
+# http://su.edu.pk#hasGilgitCases
+<http://su.edu.pk#hasGilgitCases> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://su.edu.pk#hasGilgitCases> <http://www.w3.org/2000/01/rdf-schema#domain> <http://su.edu.pk#GilgitBaltistan> .
+<http://su.edu.pk#hasGilgitCases> <http://www.w3.org/2000/01/rdf-schema#range> <http://su.edu.pk#TerristrialAreas> .
+# 
+# http://su.edu.pk#hasIslamabadCases
+<http://su.edu.pk#hasIslamabadCases> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://su.edu.pk#hasIslamabadCases> <http://www.w3.org/2000/01/rdf-schema#domain> <http://su.edu.pk#Islamabad> .
+<http://su.edu.pk#hasIslamabadCases> <http://www.w3.org/2000/01/rdf-schema#range> <http://su.edu.pk#TerristrialAreas> .
+# 
+# http://su.edu.pk#hasKPKCases
+<http://su.edu.pk#hasKPKCases> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://su.edu.pk#hasKPKCases> <http://www.w3.org/2000/01/rdf-schema#domain> <http://su.edu.pk#KPK> .
+<http://su.edu.pk#hasKPKCases> <http://www.w3.org/2000/01/rdf-schema#range> <http://su.edu.pk#Provinces> .
+# 
+# http://su.edu.pk#hasKashmirCases
+<http://su.edu.pk#hasKashmirCases> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://su.edu.pk#hasKashmirCases> <http://www.w3.org/2000/01/rdf-schema#domain> <http://su.edu.pk#AzadKashmir> .
+<http://su.edu.pk#hasKashmirCases> <http://www.w3.org/2000/01/rdf-schema#range> <http://su.edu.pk#TerristrialAreas> .
+# 
+# http://su.edu.pk#hasOtherDisease
+<http://su.edu.pk#hasOtherDisease> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://su.edu.pk#hasOtherDisease> <http://www.w3.org/2000/01/rdf-schema#domain> <http://su.edu.pk#Patient> .
+<http://su.edu.pk#hasOtherDisease> <http://www.w3.org/2000/01/rdf-schema#range> <http://su.edu.pk#OtherDiseases> .
+# 
+# http://su.edu.pk#hasSindhCases
+<http://su.edu.pk#hasSindhCases> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://su.edu.pk#hasSindhCases> <http://www.w3.org/2000/01/rdf-schema#domain> <http://su.edu.pk#Sindh> .
+<http://su.edu.pk#hasSindhCases> <http://www.w3.org/2000/01/rdf-schema#range> <http://su.edu.pk#Provinces> .
+# 
+# http://su.edu.pk#hasStatistics
+<http://su.edu.pk#hasStatistics> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://su.edu.pk#hasStatistics> <http://www.w3.org/2002/07/owl#inverseOf> <http://su.edu.pk#isCovid-19StatisticsOf> .
+<http://su.edu.pk#hasStatistics> <http://www.w3.org/2000/01/rdf-schema#domain> <http://su.edu.pk#Place> .
+<http://su.edu.pk#hasStatistics> <http://www.w3.org/2000/01/rdf-schema#range> <http://su.edu.pk#Statistics> .
+# 
+# http://su.edu.pk#hasSymptoms
+<http://su.edu.pk#hasSymptoms> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://su.edu.pk#hasSymptoms> <http://www.w3.org/2000/01/rdf-schema#domain> <http://su.edu.pk#Patient> .
+<http://su.edu.pk#hasSymptoms> <http://www.w3.org/2000/01/rdf-schema#range> <http://su.edu.pk#Symptoms> .
+# 
+# http://su.edu.pk#hasTakenBy
+<http://su.edu.pk#hasTakenBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://su.edu.pk#hasTakenBy> <http://www.w3.org/2002/07/owl#inverseOf> <http://su.edu.pk#took> .
+<http://su.edu.pk#hasTakenBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://su.edu.pk#PreventiveMeasures> .
+<http://su.edu.pk#hasTakenBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://su.edu.pk#NCOC> .
+# 
+# http://su.edu.pk#hasTotalDosesAdministered
+<http://su.edu.pk#hasTotalDosesAdministered> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://su.edu.pk#hasTotalDosesAdministered> <http://www.w3.org/2000/01/rdf-schema#domain> <http://su.edu.pk#Statistics> .
+<http://su.edu.pk#hasTotalDosesAdministered> <http://www.w3.org/2000/01/rdf-schema#range> <http://su.edu.pk#Vaccination> .
+# 
+# http://su.edu.pk#isCovid-19StatisticsOf
+<http://su.edu.pk#isCovid-19StatisticsOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://su.edu.pk#isCovid-19StatisticsOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://su.edu.pk#Statistics> .
+<http://su.edu.pk#isCovid-19StatisticsOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://su.edu.pk#Place> .
+# 
+# http://su.edu.pk#isDiagnosisOf
+<http://su.edu.pk#isDiagnosisOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://su.edu.pk#isDiagnosisOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://su.edu.pk#Diagnosis> .
+<http://su.edu.pk#isDiagnosisOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://su.edu.pk#Patient> .
+# 
+# http://su.edu.pk#nationality
+<http://su.edu.pk#nationality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://su.edu.pk#nationality> <http://www.w3.org/2000/01/rdf-schema#domain> <http://su.edu.pk#Person> .
+<http://su.edu.pk#nationality> <http://www.w3.org/2000/01/rdf-schema#range> <http://su.edu.pk#Country> .
+# 
+# http://su.edu.pk#passedVirusTo
+<http://su.edu.pk#passedVirusTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://su.edu.pk#passedVirusTo> <http://www.w3.org/2000/01/rdf-schema#domain> <http://su.edu.pk#Person> .
+<http://su.edu.pk#passedVirusTo> <http://www.w3.org/2000/01/rdf-schema#range> <http://su.edu.pk#Person> .
+# 
+# http://su.edu.pk#provinceWise
+<http://su.edu.pk#provinceWise> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://su.edu.pk#provinceWise> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://su.edu.pk#hasStatistics> .
+<http://su.edu.pk#provinceWise> <http://www.w3.org/2000/01/rdf-schema#domain> <http://su.edu.pk#Provinces> .
+<http://su.edu.pk#provinceWise> <http://www.w3.org/2000/01/rdf-schema#range> <http://su.edu.pk#ProvinceWiseStatistics> .
+# 
+# http://su.edu.pk#suspectedHost
+<http://su.edu.pk#suspectedHost> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://su.edu.pk#suspectedHost> <http://www.w3.org/2000/01/rdf-schema#domain> <http://su.edu.pk#ExposureToCovid> .
+<http://su.edu.pk#suspectedHost> <http://www.w3.org/2000/01/rdf-schema#range> <http://su.edu.pk#Person> .
+# 
+# http://su.edu.pk#suspectedReasonsOfCovid-19
+<http://su.edu.pk#suspectedReasonsOfCovid-19> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://su.edu.pk#suspectedReasonsOfCovid-19> <http://www.w3.org/2000/01/rdf-schema#domain> <http://su.edu.pk#Patient> .
+<http://su.edu.pk#suspectedReasonsOfCovid-19> <http://www.w3.org/2000/01/rdf-schema#range> <http://su.edu.pk#ExposureToCovid> .
+# 
+# http://su.edu.pk#symptomsinPatient
+<http://su.edu.pk#symptomsinPatient> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://su.edu.pk#symptomsinPatient> <http://www.w3.org/2000/01/rdf-schema#domain> <http://su.edu.pk#Patient> .
+<http://su.edu.pk#symptomsinPatient> <http://www.w3.org/2000/01/rdf-schema#range> <http://su.edu.pk#SymptomsOtherThanCovid> .
+# 
+# http://su.edu.pk#terristrialWise
+<http://su.edu.pk#terristrialWise> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://su.edu.pk#terristrialWise> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://su.edu.pk#hasStatistics> .
+<http://su.edu.pk#terristrialWise> <http://www.w3.org/2000/01/rdf-schema#domain> <http://su.edu.pk#TerristrialAreas> .
+<http://su.edu.pk#terristrialWise> <http://www.w3.org/2000/01/rdf-schema#range> <http://su.edu.pk#TerristrialWiseStatistics> .
+# 
+# http://su.edu.pk#took
+<http://su.edu.pk#took> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://su.edu.pk#took> <http://www.w3.org/2000/01/rdf-schema#domain> <http://su.edu.pk#NCOC> .
+<http://su.edu.pk#took> <http://www.w3.org/2000/01/rdf-schema#range> <http://su.edu.pk#PreventiveMeasures> .
+# 
+# http://su.edu.pk#wasSpreadBy
+<http://su.edu.pk#wasSpreadBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://su.edu.pk#wasSpreadBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://su.edu.pk#DiagnosedWithCovid> .
+<http://su.edu.pk#wasSpreadBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://su.edu.pk#Country> .
+# 
+# http://www.semanticweb.org/mujtabacomputers/ontologies/2022/4/untitled-ontology-10#hasPunjabCases
+<http://www.semanticweb.org/mujtabacomputers/ontologies/2022/4/untitled-ontology-10#hasPunjabCases> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/mujtabacomputers/ontologies/2022/4/untitled-ontology-10#hasPunjabCases> <http://www.w3.org/2000/01/rdf-schema#domain> <http://su.edu.pk#Punjab> .
+<http://www.semanticweb.org/mujtabacomputers/ontologies/2022/4/untitled-ontology-10#hasPunjabCases> <http://www.w3.org/2000/01/rdf-schema#range> <http://su.edu.pk#Provinces> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://su.edu.pk#BoosterDose
+<http://su.edu.pk#BoosterDose> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://su.edu.pk#BoosterDose> <http://www.w3.org/2000/01/rdf-schema#domain> <http://su.edu.pk#Vaccination> .
+<http://su.edu.pk#BoosterDose> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+# 
+# http://su.edu.pk#CovidExposure
+<http://su.edu.pk#CovidExposure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://su.edu.pk#CovidExposure> <http://www.w3.org/2000/01/rdf-schema#domain> <http://su.edu.pk#ExposureToCovid> .
+<http://su.edu.pk#CovidExposure> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://su.edu.pk#CovidSymptoms
+<http://su.edu.pk#CovidSymptoms> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://su.edu.pk#CovidSymptoms> <http://www.w3.org/2000/01/rdf-schema#domain> <http://su.edu.pk#Symptoms> .
+<http://su.edu.pk#CovidSymptoms> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://su.edu.pk#DoseType
+<http://su.edu.pk#DoseType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://su.edu.pk#DoseType> <http://www.w3.org/2000/01/rdf-schema#domain> <http://su.edu.pk#Doses> .
+<http://su.edu.pk#DoseType> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://su.edu.pk#FirstDose
+<http://su.edu.pk#FirstDose> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://su.edu.pk#FirstDose> <http://www.w3.org/2000/01/rdf-schema#domain> <http://su.edu.pk#Vaccination> .
+<http://su.edu.pk#FirstDose> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+# 
+# http://su.edu.pk#FullyVaccinated
+<http://su.edu.pk#FullyVaccinated> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://su.edu.pk#FullyVaccinated> <http://www.w3.org/2000/01/rdf-schema#domain> <http://su.edu.pk#Vaccination> .
+<http://su.edu.pk#FullyVaccinated> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+# 
+# http://su.edu.pk#IsPatientSufferFromCovid
+<http://su.edu.pk#IsPatientSufferFromCovid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://su.edu.pk#IsPatientSufferFromCovid> <http://www.w3.org/2000/01/rdf-schema#domain> <http://su.edu.pk#Patient> .
+<http://su.edu.pk#IsPatientSufferFromCovid> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+# 
+# http://su.edu.pk#IsPatientVaccinated
+<http://su.edu.pk#IsPatientVaccinated> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://su.edu.pk#IsPatientVaccinated> <http://www.w3.org/2000/01/rdf-schema#domain> <http://su.edu.pk#Patient> .
+<http://su.edu.pk#IsPatientVaccinated> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+# 
+# http://su.edu.pk#PopulationPercentage
+<http://su.edu.pk#PopulationPercentage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://su.edu.pk#PopulationPercentage> <http://www.w3.org/2000/01/rdf-schema#domain> <http://su.edu.pk#Country> .
+# 
+# http://su.edu.pk#PreventiveMeasures
+<http://su.edu.pk#PreventiveMeasures> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://su.edu.pk#PreventiveMeasures> <http://www.w3.org/2000/01/rdf-schema#domain> <http://su.edu.pk#PreventiveMeasures> .
+<http://su.edu.pk#PreventiveMeasures> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://su.edu.pk#SymptomsOtherThanCovid
+<http://su.edu.pk#SymptomsOtherThanCovid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://su.edu.pk#SymptomsOtherThanCovid> <http://www.w3.org/2000/01/rdf-schema#domain> <http://su.edu.pk#SymptomsOtherThanCovid> .
+<http://su.edu.pk#SymptomsOtherThanCovid> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://su.edu.pk#VariantTypes
+<http://su.edu.pk#VariantTypes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://su.edu.pk#VariantTypes> <http://www.w3.org/2000/01/rdf-schema#domain> <http://su.edu.pk#VariantTypes> .
+<http://su.edu.pk#VariantTypes> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://su.edu.pk#adultsPopPer
+<http://su.edu.pk#adultsPopPer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://su.edu.pk#adultsPopPer> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://su.edu.pk#PopulationPercentage> .
+<http://su.edu.pk#adultsPopPer> <http://www.w3.org/2000/01/rdf-schema#domain> <http://su.edu.pk#Country> .
+<http://su.edu.pk#adultsPopPer> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#float> .
+# 
+# http://su.edu.pk#caseId
+<http://su.edu.pk#caseId> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://su.edu.pk#caseId> <http://www.w3.org/2000/01/rdf-schema#domain> <http://su.edu.pk#DiagnosedWithCovid> .
+<http://su.edu.pk#caseId> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://su.edu.pk#cases
+<http://su.edu.pk#cases> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://su.edu.pk#cases> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://su.edu.pk#metrics> .
+<http://su.edu.pk#cases> <http://www.w3.org/2000/01/rdf-schema#domain> <http://su.edu.pk#Statistics> .
+<http://su.edu.pk#cases> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+# 
+# http://su.edu.pk#childrenPopPer
+<http://su.edu.pk#childrenPopPer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://su.edu.pk#childrenPopPer> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://su.edu.pk#PopulationPercentage> .
+<http://su.edu.pk#childrenPopPer> <http://www.w3.org/2000/01/rdf-schema#domain> <http://su.edu.pk#Country> .
+<http://su.edu.pk#childrenPopPer> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#float> .
+# 
+# http://su.edu.pk#confirmedCases
+<http://su.edu.pk#confirmedCases> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://su.edu.pk#confirmedCases> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://su.edu.pk#cases> .
+<http://su.edu.pk#confirmedCases> <http://www.w3.org/2000/01/rdf-schema#domain> <http://su.edu.pk#Statistics> .
+<http://su.edu.pk#confirmedCases> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+# 
+# http://su.edu.pk#countryCode
+<http://su.edu.pk#countryCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://su.edu.pk#countryCode> <http://www.w3.org/2000/01/rdf-schema#domain> <http://su.edu.pk#Country> .
+<http://su.edu.pk#countryCode> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://su.edu.pk#deceased
+<http://su.edu.pk#deceased> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://su.edu.pk#deceased> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://su.edu.pk#cases> .
+<http://su.edu.pk#deceased> <http://www.w3.org/2000/01/rdf-schema#domain> <http://su.edu.pk#Statistics> .
+<http://su.edu.pk#deceased> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+# 
+# http://su.edu.pk#firstCovidCases
+<http://su.edu.pk#firstCovidCases> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://su.edu.pk#firstCovidCases> <http://www.w3.org/2000/01/rdf-schema#domain> <http://su.edu.pk#CovidOrigin> .
+<http://su.edu.pk#firstCovidCases> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+# 
+# http://su.edu.pk#firstVac
+<http://su.edu.pk#firstVac> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://su.edu.pk#firstVac> <http://www.w3.org/2000/01/rdf-schema#domain> <http://su.edu.pk#Vaccination> .
+<http://su.edu.pk#firstVac> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+# 
+# http://su.edu.pk#hasCausedAnySecondaryInfections
+<http://su.edu.pk#hasCausedAnySecondaryInfections> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://su.edu.pk#hasCausedAnySecondaryInfections> <http://www.w3.org/2000/01/rdf-schema#domain> <http://su.edu.pk#Patient> .
+<http://su.edu.pk#hasCausedAnySecondaryInfections> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+# 
+# http://su.edu.pk#metrics
+<http://su.edu.pk#metrics> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://su.edu.pk#metrics> <http://www.w3.org/2000/01/rdf-schema#domain> <http://su.edu.pk#Statistics> .
+<http://su.edu.pk#metrics> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+# 
+# http://su.edu.pk#otherDiseases
+<http://su.edu.pk#otherDiseases> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://su.edu.pk#otherDiseases> <http://www.w3.org/2000/01/rdf-schema#domain> <http://su.edu.pk#Patient> .
+<http://su.edu.pk#otherDiseases> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+# 
+# http://su.edu.pk#place
+<http://su.edu.pk#place> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://su.edu.pk#place> <http://www.w3.org/2000/01/rdf-schema#domain> <http://su.edu.pk#Place> .
+<http://su.edu.pk#place> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://su.edu.pk#population
+<http://su.edu.pk#population> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://su.edu.pk#population> <http://www.w3.org/2000/01/rdf-schema#domain> <http://su.edu.pk#Country> .
+<http://su.edu.pk#population> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://su.edu.pk#recovered
+<http://su.edu.pk#recovered> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://su.edu.pk#recovered> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://su.edu.pk#cases> .
+<http://su.edu.pk#recovered> <http://www.w3.org/2000/01/rdf-schema#domain> <http://su.edu.pk#Statistics> .
+<http://su.edu.pk#recovered> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+# 
+# http://su.edu.pk#source
+<http://su.edu.pk#source> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://su.edu.pk#source> <http://www.w3.org/2000/01/rdf-schema#domain> <http://su.edu.pk#Statistics> .
+<http://su.edu.pk#source> <http://www.w3.org/2000/01/rdf-schema#range> _:genid1 .
+_:genid1 <http://www.w3.org/2002/07/owl#unionOf> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2001/XMLSchema#anyURI> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# http://su.edu.pk#totalCasesInBalochistan
+<http://su.edu.pk#totalCasesInBalochistan> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://su.edu.pk#totalCasesInBalochistan> <http://www.w3.org/2000/01/rdf-schema#domain> <http://su.edu.pk#Balochistan> .
+<http://su.edu.pk#totalCasesInBalochistan> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+# 
+# http://su.edu.pk#totalCasesInGilgit
+<http://su.edu.pk#totalCasesInGilgit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://su.edu.pk#totalCasesInGilgit> <http://www.w3.org/2000/01/rdf-schema#domain> <http://su.edu.pk#GilgitBaltistan> .
+<http://su.edu.pk#totalCasesInGilgit> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+# 
+# http://su.edu.pk#totalCasesInIslamabad
+<http://su.edu.pk#totalCasesInIslamabad> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://su.edu.pk#totalCasesInIslamabad> <http://www.w3.org/2000/01/rdf-schema#domain> <http://su.edu.pk#Islamabad> .
+<http://su.edu.pk#totalCasesInIslamabad> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+# 
+# http://su.edu.pk#totalCasesInKPK
+<http://su.edu.pk#totalCasesInKPK> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://su.edu.pk#totalCasesInKPK> <http://www.w3.org/2000/01/rdf-schema#domain> <http://su.edu.pk#KPK> .
+<http://su.edu.pk#totalCasesInKPK> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+# 
+# http://su.edu.pk#totalCasesInKashmir
+<http://su.edu.pk#totalCasesInKashmir> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://su.edu.pk#totalCasesInKashmir> <http://www.w3.org/2000/01/rdf-schema#domain> <http://su.edu.pk#AzadKashmir> .
+<http://su.edu.pk#totalCasesInKashmir> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+# 
+# http://su.edu.pk#totalCasesInPunjab
+<http://su.edu.pk#totalCasesInPunjab> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://su.edu.pk#totalCasesInPunjab> <http://www.w3.org/2000/01/rdf-schema#domain> <http://su.edu.pk#Punjab> .
+<http://su.edu.pk#totalCasesInPunjab> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+# 
+# http://su.edu.pk#totalCasesInSindh
+<http://su.edu.pk#totalCasesInSindh> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://su.edu.pk#totalCasesInSindh> <http://www.w3.org/2000/01/rdf-schema#domain> <http://su.edu.pk#Sindh> .
+<http://su.edu.pk#totalCasesInSindh> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+# 
+# http://su.edu.pk#totalDoses
+<http://su.edu.pk#totalDoses> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://su.edu.pk#totalDoses> <http://www.w3.org/2000/01/rdf-schema#domain> <http://su.edu.pk#Vaccination> .
+<http://su.edu.pk#totalDoses> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+# 
+# http://su.edu.pk#youthPopPer
+<http://su.edu.pk#youthPopPer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://su.edu.pk#youthPopPer> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://su.edu.pk#PopulationPercentage> .
+<http://su.edu.pk#youthPopPer> <http://www.w3.org/2000/01/rdf-schema#domain> <http://su.edu.pk#Country> .
+<http://su.edu.pk#youthPopPer> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#float> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://su.edu.pk#AzadKashmir
+<http://su.edu.pk#AzadKashmir> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://su.edu.pk#AzadKashmir> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://su.edu.pk#TerristrialAreas> .
+# 
+# http://su.edu.pk#Balochistan
+<http://su.edu.pk#Balochistan> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://su.edu.pk#Balochistan> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://su.edu.pk#Provinces> .
+# 
+# http://su.edu.pk#Country
+<http://su.edu.pk#Country> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://su.edu.pk#Country> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://su.edu.pk#Place> .
+# 
+# http://su.edu.pk#CountryWiseStatistics
+<http://su.edu.pk#CountryWiseStatistics> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://su.edu.pk#CountryWiseStatistics> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://su.edu.pk#Statistics> .
+# 
+# http://su.edu.pk#CovidCareCenter
+<http://su.edu.pk#CovidCareCenter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://su.edu.pk#CovidCareCenter> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://su.edu.pk#Organization> .
+# 
+# http://su.edu.pk#CovidOrigin
+<http://su.edu.pk#CovidOrigin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://su.edu.pk#CovidVariants
+<http://su.edu.pk#CovidVariants> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://su.edu.pk#DiagnosedWithCovid
+<http://su.edu.pk#DiagnosedWithCovid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://su.edu.pk#DiagnosedWithCovid> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://su.edu.pk#Patient> .
+<http://su.edu.pk#DiagnosedWithCovid> <http://www.w3.org/2002/07/owl#disjointWith> <http://su.edu.pk#UntestedForCovid> .
+# 
+# http://su.edu.pk#Diagnosis
+<http://su.edu.pk#Diagnosis> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://su.edu.pk#Doctor
+<http://su.edu.pk#Doctor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://su.edu.pk#Doctor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://su.edu.pk#HealthCareProfessionals> .
+# 
+# http://su.edu.pk#Doses
+<http://su.edu.pk#Doses> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://su.edu.pk#Doses> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://su.edu.pk#Vaccination> .
+# 
+# http://su.edu.pk#Entity
+<http://su.edu.pk#Entity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://su.edu.pk#ExposureToCovid
+<http://su.edu.pk#ExposureToCovid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://su.edu.pk#Female
+<http://su.edu.pk#Female> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://su.edu.pk#Female> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://su.edu.pk#Person> .
+# 
+# http://su.edu.pk#GenderType
+<http://su.edu.pk#GenderType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://su.edu.pk#GenderType> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid4 .
+_:genid4 <http://www.w3.org/2002/07/owl#unionOf> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid5 .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://su.edu.pk#Male> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://su.edu.pk#Female> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://su.edu.pk#GilgitBaltistan
+<http://su.edu.pk#GilgitBaltistan> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://su.edu.pk#GilgitBaltistan> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://su.edu.pk#TerristrialAreas> .
+# 
+# http://su.edu.pk#HealthCareProfessionals
+<http://su.edu.pk#HealthCareProfessionals> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://su.edu.pk#HealthCareProfessionals> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://su.edu.pk#Person> .
+# 
+# http://su.edu.pk#HealthOrganization
+<http://su.edu.pk#HealthOrganization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://su.edu.pk#HealthOrganization> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://su.edu.pk#Organization> .
+# 
+# http://su.edu.pk#Islamabad
+<http://su.edu.pk#Islamabad> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://su.edu.pk#Islamabad> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://su.edu.pk#TerristrialAreas> .
+# 
+# http://su.edu.pk#KPK
+<http://su.edu.pk#KPK> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://su.edu.pk#KPK> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://su.edu.pk#Provinces> .
+# 
+# http://su.edu.pk#Male
+<http://su.edu.pk#Male> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://su.edu.pk#Male> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://su.edu.pk#Person> .
+# 
+# http://su.edu.pk#Mild
+<http://su.edu.pk#Mild> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://su.edu.pk#Mild> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://su.edu.pk#Diagnosis> .
+# 
+# http://su.edu.pk#Moderate
+<http://su.edu.pk#Moderate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://su.edu.pk#Moderate> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://su.edu.pk#Diagnosis> .
+# 
+# http://su.edu.pk#NCOC
+<http://su.edu.pk#NCOC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://su.edu.pk#NCOC> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://su.edu.pk#Organization> .
+# 
+# http://su.edu.pk#NonVaccinated
+<http://su.edu.pk#NonVaccinated> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://su.edu.pk#NonVaccinated> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://su.edu.pk#Patient> .
+# 
+# http://su.edu.pk#Nurse
+<http://su.edu.pk#Nurse> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://su.edu.pk#Nurse> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://su.edu.pk#HealthCareProfessionals> .
+# 
+# http://su.edu.pk#Organization
+<http://su.edu.pk#Organization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://su.edu.pk#Organization> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://su.edu.pk#Entity> .
+# 
+# http://su.edu.pk#OtherDiseases
+<http://su.edu.pk#OtherDiseases> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://su.edu.pk#OtherDiseases> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://su.edu.pk#Patient> .
+# 
+# http://su.edu.pk#Patient
+<http://su.edu.pk#Patient> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://su.edu.pk#Patient> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://su.edu.pk#Person> .
+# 
+# http://su.edu.pk#Person
+<http://su.edu.pk#Person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://su.edu.pk#Person> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://su.edu.pk#Entity> .
+# 
+# http://su.edu.pk#Place
+<http://su.edu.pk#Place> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://su.edu.pk#PreventiveMeasures
+<http://su.edu.pk#PreventiveMeasures> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://su.edu.pk#ProvinceWiseStatistics
+<http://su.edu.pk#ProvinceWiseStatistics> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://su.edu.pk#ProvinceWiseStatistics> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://su.edu.pk#Statistics> .
+# 
+# http://su.edu.pk#Provinces
+<http://su.edu.pk#Provinces> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://su.edu.pk#Provinces> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://su.edu.pk#Place> .
+# 
+# http://su.edu.pk#Punjab
+<http://su.edu.pk#Punjab> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://su.edu.pk#Punjab> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://su.edu.pk#Provinces> .
+# 
+# http://su.edu.pk#Severe
+<http://su.edu.pk#Severe> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://su.edu.pk#Severe> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://su.edu.pk#Diagnosis> .
+# 
+# http://su.edu.pk#Sindh
+<http://su.edu.pk#Sindh> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://su.edu.pk#Sindh> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://su.edu.pk#Provinces> .
+# 
+# http://su.edu.pk#Statistics
+<http://su.edu.pk#Statistics> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://su.edu.pk#Symptoms
+<http://su.edu.pk#Symptoms> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://su.edu.pk#Symptoms> <http://www.w3.org/2002/07/owl#disjointWith> <http://su.edu.pk#SymptomsOtherThanCovid> .
+# 
+# http://su.edu.pk#SymptomsOtherThanCovid
+<http://su.edu.pk#SymptomsOtherThanCovid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://su.edu.pk#TerristrialAreas
+<http://su.edu.pk#TerristrialAreas> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://su.edu.pk#TerristrialAreas> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://su.edu.pk#Place> .
+# 
+# http://su.edu.pk#TerristrialWiseStatistics
+<http://su.edu.pk#TerristrialWiseStatistics> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://su.edu.pk#TerristrialWiseStatistics> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://su.edu.pk#Statistics> .
+# 
+# http://su.edu.pk#UntestedForCovid
+<http://su.edu.pk#UntestedForCovid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://su.edu.pk#UntestedForCovid> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://su.edu.pk#Person> .
+# 
+# http://su.edu.pk#Vaccinated
+<http://su.edu.pk#Vaccinated> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://su.edu.pk#Vaccinated> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://su.edu.pk#Patient> .
+# 
+# http://su.edu.pk#Vaccination
+<http://su.edu.pk#Vaccination> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://su.edu.pk#VariantTypes
+<http://su.edu.pk#VariantTypes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://su.edu.pk#VariantTypes> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://su.edu.pk#CovidVariants> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://su.edu.pk#Alpha
+<http://su.edu.pk#Alpha> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://su.edu.pk#Alpha> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://su.edu.pk#VariantTypes> .
+<http://su.edu.pk#Alpha> <http://su.edu.pk#HasVariant> <http://su.edu.pk#Alpha> .
+<http://su.edu.pk#Alpha> <http://su.edu.pk#VariantTypes> "Alpha" .
+# 
+# http://su.edu.pk#AstraZeneca
+<http://su.edu.pk#AstraZeneca> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://su.edu.pk#AstraZeneca> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://su.edu.pk#Doses> .
+<http://su.edu.pk#AstraZeneca> <http://su.edu.pk#hasDoseType> <http://su.edu.pk#AstraZeneca> .
+<http://su.edu.pk#AstraZeneca> <http://su.edu.pk#DoseType> "AstraZeneca" .
+# 
+# http://su.edu.pk#AzadKashmir
+<http://su.edu.pk#AzadKashmir> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://su.edu.pk#AzadKashmir> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://su.edu.pk#TerristrialWiseStatistics> .
+<http://su.edu.pk#AzadKashmir> <http://su.edu.pk#hasKashmirCases> <http://su.edu.pk#AzadKashmir> .
+<http://su.edu.pk#AzadKashmir> <http://su.edu.pk#source> "https://covid.gov.pk/"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+<http://su.edu.pk#AzadKashmir> <http://su.edu.pk#totalCasesInKashmir> "43310"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+# 
+# http://su.edu.pk#Balochistan
+<http://su.edu.pk#Balochistan> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://su.edu.pk#Balochistan> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://su.edu.pk#ProvinceWiseStatistics> .
+<http://su.edu.pk#Balochistan> <http://su.edu.pk#hasBalochistanCases> <http://su.edu.pk#Balochistan> .
+<http://su.edu.pk#Balochistan> <http://su.edu.pk#source> "https://covid.gov.pk/"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+<http://su.edu.pk#Balochistan> <http://su.edu.pk#totalCasesInBalochistan> "35484"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+# 
+# http://su.edu.pk#BloodPressure
+<http://su.edu.pk#BloodPressure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://su.edu.pk#BloodPressure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://su.edu.pk#OtherDiseases> .
+# 
+# http://su.edu.pk#BoosterDose
+<http://su.edu.pk#BoosterDose> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://su.edu.pk#BoosterDose> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://su.edu.pk#Vaccination> .
+<http://su.edu.pk#BoosterDose> <http://su.edu.pk#hasBoosterDoseVac> <http://su.edu.pk#BoosterDose> .
+<http://su.edu.pk#BoosterDose> <http://su.edu.pk#BoosterDose> "8109984"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://su.edu.pk#BoosterDose> <http://su.edu.pk#source> "https://covid.gov.pk"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+# 
+# http://su.edu.pk#BordersClosed
+<http://su.edu.pk#BordersClosed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://su.edu.pk#BordersClosed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://su.edu.pk#PreventiveMeasures> .
+<http://su.edu.pk#BordersClosed> <http://su.edu.pk#hasTakenBy> <http://su.edu.pk#BordersClosed> .
+<http://su.edu.pk#BordersClosed> <http://su.edu.pk#PreventiveMeasures> "PMBordersClosed" .
+# 
+# http://su.edu.pk#BreathingIssue
+<http://su.edu.pk#BreathingIssue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://su.edu.pk#BreathingIssue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://su.edu.pk#Symptoms> .
+<http://su.edu.pk#BreathingIssue> <http://su.edu.pk#hasSymptoms> <http://su.edu.pk#BreathingIssue> .
+<http://su.edu.pk#BreathingIssue> <http://su.edu.pk#CovidSymptoms> "SymptomBreathingIssue" .
+# 
+# http://su.edu.pk#Cancer
+<http://su.edu.pk#Cancer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://su.edu.pk#Cancer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://su.edu.pk#OtherDiseases> .
+# 
+# http://su.edu.pk#China
+<http://su.edu.pk#China> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://su.edu.pk#China> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://su.edu.pk#CovidOrigin> .
+<http://su.edu.pk#China> <http://su.edu.pk#firstCovidSpreadFrom> <http://su.edu.pk#China> .
+<http://su.edu.pk#China> <http://su.edu.pk#firstCovidCases> "Dec2019" .
+# 
+# http://su.edu.pk#CloseContact
+<http://su.edu.pk#CloseContact> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://su.edu.pk#CloseContact> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://su.edu.pk#ExposureToCovid> .
+<http://su.edu.pk#CloseContact> <http://su.edu.pk#suspectedHost> <http://su.edu.pk#CloseContact> .
+<http://su.edu.pk#CloseContact> <http://su.edu.pk#CovidExposure> "ExposureCloseContact" .
+# 
+# http://su.edu.pk#Cough
+<http://su.edu.pk#Cough> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://su.edu.pk#Cough> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://su.edu.pk#SymptomsOtherThanCovid> .
+<http://su.edu.pk#Cough> <http://su.edu.pk#symptomsinPatient> <http://su.edu.pk#Cough> .
+<http://su.edu.pk#Cough> <http://su.edu.pk#SymptomsOtherThanCovid> "DiseaseCough" .
+# 
+# http://su.edu.pk#Deceased
+<http://su.edu.pk#Deceased> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://su.edu.pk#Deceased> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://su.edu.pk#CountryWiseStatistics> .
+<http://su.edu.pk#Deceased> <http://su.edu.pk#countryWise> <http://su.edu.pk#Deceased> .
+<http://su.edu.pk#Deceased> <http://su.edu.pk#deceased> "30379"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://su.edu.pk#Deceased> <http://su.edu.pk#source> "https://www.worldometers.info/coronavirus/country/pakistan/"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+# 
+# http://su.edu.pk#Delta
+<http://su.edu.pk#Delta> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://su.edu.pk#Delta> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://su.edu.pk#VariantTypes> .
+<http://su.edu.pk#Delta> <http://su.edu.pk#HasVariant> <http://su.edu.pk#Delta> .
+<http://su.edu.pk#Delta> <http://su.edu.pk#VariantTypes> "Delta" .
+# 
+# http://su.edu.pk#Diarrhea
+<http://su.edu.pk#Diarrhea> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://su.edu.pk#Diarrhea> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://su.edu.pk#SymptomsOtherThanCovid> .
+<http://su.edu.pk#Diarrhea> <http://su.edu.pk#symptomsinPatient> <http://su.edu.pk#Diarrhea> .
+<http://su.edu.pk#Diarrhea> <http://su.edu.pk#SymptomsOtherThanCovid> "DiseaseDiarrhea" .
+# 
+# http://su.edu.pk#DryCough
+<http://su.edu.pk#DryCough> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://su.edu.pk#DryCough> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://su.edu.pk#Symptoms> .
+<http://su.edu.pk#DryCough> <http://su.edu.pk#hasSymptoms> <http://su.edu.pk#DryCough> .
+<http://su.edu.pk#DryCough> <http://su.edu.pk#CovidSymptoms> "SymptomDryCough" .
+# 
+# http://su.edu.pk#FaceMasks
+<http://su.edu.pk#FaceMasks> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://su.edu.pk#FaceMasks> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://su.edu.pk#PreventiveMeasures> .
+<http://su.edu.pk#FaceMasks> <http://su.edu.pk#hasTakenBy> <http://su.edu.pk#FaceMasks> .
+<http://su.edu.pk#FaceMasks> <http://su.edu.pk#PreventiveMeasures> "PMFaceMasks" .
+# 
+# http://su.edu.pk#FeelingTired
+<http://su.edu.pk#FeelingTired> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://su.edu.pk#FeelingTired> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://su.edu.pk#Symptoms> .
+<http://su.edu.pk#FeelingTired> <http://su.edu.pk#hasSymptoms> <http://su.edu.pk#FeelingTired> .
+<http://su.edu.pk#FeelingTired> <http://su.edu.pk#CovidSymptoms> "SymptomFeelingTired" .
+# 
+# http://su.edu.pk#Fever
+<http://su.edu.pk#Fever> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://su.edu.pk#Fever> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://su.edu.pk#Symptoms> .
+<http://su.edu.pk#Fever> <http://su.edu.pk#hasSymptoms> <http://su.edu.pk#Fever> .
+<http://su.edu.pk#Fever> <http://su.edu.pk#CovidSymptoms> "SymptomFever" .
+# 
+# http://su.edu.pk#FirstDose
+<http://su.edu.pk#FirstDose> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://su.edu.pk#FirstDose> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://su.edu.pk#Vaccination> .
+<http://su.edu.pk#FirstDose> <http://su.edu.pk#hasFirstDose> <http://su.edu.pk#FirstDose> .
+<http://su.edu.pk#FirstDose> <http://su.edu.pk#FirstDose> "135030016"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://su.edu.pk#FirstDose> <http://su.edu.pk#source> "https://covid.gov.pk"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+# 
+# http://su.edu.pk#FirstVaccineDose
+<http://su.edu.pk#FirstVaccineDose> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://su.edu.pk#FirstVaccineDose> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://su.edu.pk#Vaccination> .
+<http://su.edu.pk#FirstVaccineDose> <http://su.edu.pk#hasFirstVac> <http://su.edu.pk#FirstVaccineDose> .
+<http://su.edu.pk#FirstVaccineDose> <http://su.edu.pk#firstVac> "8May2021" .
+<http://su.edu.pk#FirstVaccineDose> <http://su.edu.pk#source> "https://covid.gov.pk"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+# 
+# http://su.edu.pk#FullyVaccinated
+<http://su.edu.pk#FullyVaccinated> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://su.edu.pk#FullyVaccinated> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://su.edu.pk#Vaccination> .
+<http://su.edu.pk#FullyVaccinated> <http://su.edu.pk#hasFullyVaccinated> <http://su.edu.pk#FullyVaccinated> .
+<http://su.edu.pk#FullyVaccinated> <http://su.edu.pk#FullyVaccinated> "123128282"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://su.edu.pk#FullyVaccinated> <http://su.edu.pk#source> "https://covid.gov.pk"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+# 
+# http://su.edu.pk#Gathering
+<http://su.edu.pk#Gathering> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://su.edu.pk#Gathering> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://su.edu.pk#ExposureToCovid> .
+<http://su.edu.pk#Gathering> <http://su.edu.pk#suspectedHost> <http://su.edu.pk#Gathering> .
+<http://su.edu.pk#Gathering> <http://su.edu.pk#CovidExposure> "ExposureGathering" .
+# 
+# http://su.edu.pk#GatheringsNotAllowed
+<http://su.edu.pk#GatheringsNotAllowed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://su.edu.pk#GatheringsNotAllowed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://su.edu.pk#PreventiveMeasures> .
+<http://su.edu.pk#GatheringsNotAllowed> <http://su.edu.pk#hasTakenBy> <http://su.edu.pk#GatheringsNotAllowed> .
+<http://su.edu.pk#GatheringsNotAllowed> <http://su.edu.pk#PreventiveMeasures> "PMGatheringsNotAllowed" .
+# 
+# http://su.edu.pk#GilgitBaltistan
+<http://su.edu.pk#GilgitBaltistan> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://su.edu.pk#GilgitBaltistan> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://su.edu.pk#TerristrialWiseStatistics> .
+<http://su.edu.pk#GilgitBaltistan> <http://su.edu.pk#hasGilgitCases> <http://su.edu.pk#GilgitBaltistan> .
+<http://su.edu.pk#GilgitBaltistan> <http://su.edu.pk#source> "https://covid.gov.pk/"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+<http://su.edu.pk#GilgitBaltistan> <http://su.edu.pk#totalCasesInGilgit> "11737"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+# 
+# http://su.edu.pk#Headache
+<http://su.edu.pk#Headache> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://su.edu.pk#Headache> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://su.edu.pk#SymptomsOtherThanCovid> .
+<http://su.edu.pk#Headache> <http://su.edu.pk#symptomsinPatient> <http://su.edu.pk#Headache> .
+<http://su.edu.pk#Headache> <http://su.edu.pk#SymptomsOtherThanCovid> "DiseaseHeadache" .
+# 
+# http://su.edu.pk#InfectedCoPassenger
+<http://su.edu.pk#InfectedCoPassenger> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://su.edu.pk#InfectedCoPassenger> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://su.edu.pk#ExposureToCovid> .
+<http://su.edu.pk#InfectedCoPassenger> <http://su.edu.pk#suspectedHost> <http://su.edu.pk#InfectedCoPassenger> .
+<http://su.edu.pk#InfectedCoPassenger> <http://su.edu.pk#CovidExposure> "ExposureInfectedCoPassenger" .
+# 
+# http://su.edu.pk#InfectedCoWorker
+<http://su.edu.pk#InfectedCoWorker> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://su.edu.pk#InfectedCoWorker> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://su.edu.pk#ExposureToCovid> .
+<http://su.edu.pk#InfectedCoWorker> <http://su.edu.pk#suspectedHost> <http://su.edu.pk#InfectedCoWorker> .
+<http://su.edu.pk#InfectedCoWorker> <http://su.edu.pk#CovidExposure> "ExposureInfectedCoWorker" .
+# 
+# http://su.edu.pk#InfectedFamilyMember
+<http://su.edu.pk#InfectedFamilyMember> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://su.edu.pk#InfectedFamilyMember> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://su.edu.pk#ExposureToCovid> .
+<http://su.edu.pk#InfectedFamilyMember> <http://su.edu.pk#suspectedHost> <http://su.edu.pk#InfectedFamilyMember> .
+<http://su.edu.pk#InfectedFamilyMember> <http://su.edu.pk#CovidExposure> "ExposureInfectedFamilyMember" .
+# 
+# http://su.edu.pk#Islamabad
+<http://su.edu.pk#Islamabad> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://su.edu.pk#Islamabad> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://su.edu.pk#TerristrialWiseStatistics> .
+<http://su.edu.pk#Islamabad> <http://su.edu.pk#hasIslamabadCases> <http://su.edu.pk#Islamabad> .
+<http://su.edu.pk#Islamabad> <http://su.edu.pk#source> "https://covid.gov.pk/"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+<http://su.edu.pk#Islamabad> <http://su.edu.pk#totalCasesInIslamabad> "135178"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+# 
+# http://su.edu.pk#KPK
+<http://su.edu.pk#KPK> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://su.edu.pk#KPK> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://su.edu.pk#ProvinceWiseStatistics> .
+<http://su.edu.pk#KPK> <http://su.edu.pk#hasKPKCases> <http://su.edu.pk#KPK> .
+<http://su.edu.pk#KPK> <http://su.edu.pk#source> "https://covid.gov.pk/"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+<http://su.edu.pk#KPK> <http://su.edu.pk#totalCasesInKPK> "219460"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+# 
+# http://su.edu.pk#Moderna
+<http://su.edu.pk#Moderna> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://su.edu.pk#Moderna> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://su.edu.pk#Doses> .
+<http://su.edu.pk#Moderna> <http://su.edu.pk#hasDoseType> <http://su.edu.pk#Moderna> .
+<http://su.edu.pk#Moderna> <http://su.edu.pk#DoseType> "Moderna" .
+# 
+# http://su.edu.pk#NasalCongestion
+<http://su.edu.pk#NasalCongestion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://su.edu.pk#NasalCongestion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://su.edu.pk#Symptoms> .
+<http://su.edu.pk#NasalCongestion> <http://su.edu.pk#hasSymptoms> <http://su.edu.pk#NasalCongestion> .
+<http://su.edu.pk#NasalCongestion> <http://su.edu.pk#CovidSymptoms> "SymptomNasalCongestion" .
+# 
+# http://su.edu.pk#None
+<http://su.edu.pk#None> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://su.edu.pk#None> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://su.edu.pk#OtherDiseases> .
+# 
+# http://su.edu.pk#NovaVax
+<http://su.edu.pk#NovaVax> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://su.edu.pk#NovaVax> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://su.edu.pk#Doses> .
+<http://su.edu.pk#NovaVax> <http://su.edu.pk#hasDoseType> <http://su.edu.pk#NovaVax> .
+<http://su.edu.pk#NovaVax> <http://su.edu.pk#DoseType> "NovaVax" .
+# 
+# http://su.edu.pk#Omicron
+<http://su.edu.pk#Omicron> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://su.edu.pk#Omicron> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://su.edu.pk#VariantTypes> .
+<http://su.edu.pk#Omicron> <http://su.edu.pk#HasVariant> <http://su.edu.pk#Omicron> .
+<http://su.edu.pk#Omicron> <http://su.edu.pk#VariantTypes> "Omicron" .
+# 
+# http://su.edu.pk#Others
+<http://su.edu.pk#Others> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://su.edu.pk#Others> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://su.edu.pk#OtherDiseases> .
+# 
+# http://su.edu.pk#Pain
+<http://su.edu.pk#Pain> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://su.edu.pk#Pain> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://su.edu.pk#Symptoms> .
+<http://su.edu.pk#Pain> <http://su.edu.pk#hasSymptoms> <http://su.edu.pk#Pain> .
+<http://su.edu.pk#Pain> <http://su.edu.pk#CovidSymptoms> "SymptomPain" .
+# 
+# http://su.edu.pk#PainInThroat
+<http://su.edu.pk#PainInThroat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://su.edu.pk#PainInThroat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://su.edu.pk#Symptoms> .
+<http://su.edu.pk#PainInThroat> <http://su.edu.pk#hasSymptoms> <http://su.edu.pk#PainInThroat> .
+<http://su.edu.pk#PainInThroat> <http://su.edu.pk#CovidSymptoms> "SymptomPainInThroat" .
+# 
+# http://su.edu.pk#Pakistan
+<http://su.edu.pk#Pakistan> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://su.edu.pk#Pakistan> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://su.edu.pk#Country> .
+<http://su.edu.pk#Pakistan> <http://su.edu.pk#hasCountry> <http://su.edu.pk#Pakistan> .
+<http://su.edu.pk#Pakistan> <http://su.edu.pk#adultsPopPer> "4.35%" .
+<http://su.edu.pk#Pakistan> <http://su.edu.pk#childrenPopPer> "34.82%" .
+<http://su.edu.pk#Pakistan> <http://su.edu.pk#countryCode> "+92" .
+<http://su.edu.pk#Pakistan> <http://su.edu.pk#population> "220.9Million" .
+<http://su.edu.pk#Pakistan> <http://su.edu.pk#youthPopPer> "60.83%" .
+# 
+# http://su.edu.pk#Pfizer
+<http://su.edu.pk#Pfizer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://su.edu.pk#Pfizer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://su.edu.pk#Doses> .
+<http://su.edu.pk#Pfizer> <http://su.edu.pk#hasDoseType> <http://su.edu.pk#Pfizer> .
+<http://su.edu.pk#Pfizer> <http://su.edu.pk#DoseType> "Pfizer" .
+# 
+# http://su.edu.pk#Pneumonia
+<http://su.edu.pk#Pneumonia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://su.edu.pk#Pneumonia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://su.edu.pk#SymptomsOtherThanCovid> .
+<http://su.edu.pk#Pneumonia> <http://su.edu.pk#symptomsinPatient> <http://su.edu.pk#Pneumonia> .
+<http://su.edu.pk#Pneumonia> <http://su.edu.pk#SymptomsOtherThanCovid> "DiseasePneumonia" .
+# 
+# http://su.edu.pk#Punjab
+<http://su.edu.pk#Punjab> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://su.edu.pk#Punjab> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://su.edu.pk#ProvinceWiseStatistics> .
+<http://su.edu.pk#Punjab> <http://www.semanticweb.org/mujtabacomputers/ontologies/2022/4/untitled-ontology-10#hasPunjabCases> <http://su.edu.pk#Punjab> .
+<http://su.edu.pk#Punjab> <http://su.edu.pk#source> "https://covid.gov.pk/"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+<http://su.edu.pk#Punjab> <http://su.edu.pk#totalCasesInPunjab> "506018"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+# 
+# http://su.edu.pk#Recovered
+<http://su.edu.pk#Recovered> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://su.edu.pk#Recovered> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://su.edu.pk#CountryWiseStatistics> .
+<http://su.edu.pk#Recovered> <http://su.edu.pk#countryWise> <http://su.edu.pk#Recovered> .
+<http://su.edu.pk#Recovered> <http://su.edu.pk#recovered> "1496123"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://su.edu.pk#Recovered> <http://su.edu.pk#source> "https://www.worldometers.info/coronavirus/country/pakistan/"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+# 
+# http://su.edu.pk#SeverePneumonia
+<http://su.edu.pk#SeverePneumonia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://su.edu.pk#SeverePneumonia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://su.edu.pk#Symptoms> .
+<http://su.edu.pk#SeverePneumonia> <http://su.edu.pk#hasSymptoms> <http://su.edu.pk#SeverePneumonia> .
+<http://su.edu.pk#SeverePneumonia> <http://su.edu.pk#CovidSymptoms> "SymptomSeverePneumonia" .
+# 
+# http://su.edu.pk#Sindh
+<http://su.edu.pk#Sindh> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://su.edu.pk#Sindh> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://su.edu.pk#ProvinceWiseStatistics> .
+<http://su.edu.pk#Sindh> <http://su.edu.pk#hasSindhCases> <http://su.edu.pk#Sindh> .
+<http://su.edu.pk#Sindh> <http://su.edu.pk#source> "https://covid.gov.pk/"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+<http://su.edu.pk#Sindh> <http://su.edu.pk#totalCasesInSindh> "576769"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+# 
+# http://su.edu.pk#SinoVac
+<http://su.edu.pk#SinoVac> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://su.edu.pk#SinoVac> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://su.edu.pk#Doses> .
+<http://su.edu.pk#SinoVac> <http://su.edu.pk#hasDoseType> <http://su.edu.pk#SinoVac> .
+<http://su.edu.pk#SinoVac> <http://su.edu.pk#DoseType> "SinoVac" .
+# 
+# http://su.edu.pk#Sinopharm
+<http://su.edu.pk#Sinopharm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://su.edu.pk#Sinopharm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://su.edu.pk#Doses> .
+<http://su.edu.pk#Sinopharm> <http://su.edu.pk#hasDoseType> <http://su.edu.pk#Sinopharm> .
+<http://su.edu.pk#Sinopharm> <http://su.edu.pk#DoseType> "Sinopharm" .
+# 
+# http://su.edu.pk#SmartLockdown
+<http://su.edu.pk#SmartLockdown> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://su.edu.pk#SmartLockdown> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://su.edu.pk#PreventiveMeasures> .
+<http://su.edu.pk#SmartLockdown> <http://su.edu.pk#hasTakenBy> <http://su.edu.pk#SmartLockdown> .
+<http://su.edu.pk#SmartLockdown> <http://su.edu.pk#PreventiveMeasures> "PMSmartLockDown" .
+# 
+# http://su.edu.pk#Sneezing
+<http://su.edu.pk#Sneezing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://su.edu.pk#Sneezing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://su.edu.pk#Symptoms> .
+<http://su.edu.pk#Sneezing> <http://su.edu.pk#hasSymptoms> <http://su.edu.pk#Sneezing> .
+<http://su.edu.pk#Sneezing> <http://su.edu.pk#CovidSymptoms> "SymptomSneezing" .
+# 
+# http://su.edu.pk#Sugar
+<http://su.edu.pk#Sugar> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://su.edu.pk#Sugar> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://su.edu.pk#OtherDiseases> .
+# 
+# http://su.edu.pk#SuspensionOfFlight
+<http://su.edu.pk#SuspensionOfFlight> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://su.edu.pk#SuspensionOfFlight> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://su.edu.pk#PreventiveMeasures> .
+<http://su.edu.pk#SuspensionOfFlight> <http://su.edu.pk#hasTakenBy> <http://su.edu.pk#SuspensionOfFlight> .
+<http://su.edu.pk#SuspensionOfFlight> <http://su.edu.pk#PreventiveMeasures> "PMSuspensionOfFlight" .
+# 
+# http://su.edu.pk#TotalDoses
+<http://su.edu.pk#TotalDoses> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://su.edu.pk#TotalDoses> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://su.edu.pk#Vaccination> .
+<http://su.edu.pk#TotalDoses> <http://su.edu.pk#hasTotalDosesAdministered> <http://su.edu.pk#TotalDoses> .
+<http://su.edu.pk#TotalDoses> <http://su.edu.pk#source> "https://covid.gov.pk"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+<http://su.edu.pk#TotalDoses> <http://su.edu.pk#totalDoses> "249153531"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+# 
+# http://su.edu.pk#confirmed
+<http://su.edu.pk#confirmed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://su.edu.pk#confirmed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://su.edu.pk#CountryWiseStatistics> .
+<http://su.edu.pk#confirmed> <http://su.edu.pk#countryWise> <http://su.edu.pk#confirmed> .
+<http://su.edu.pk#confirmed> <http://su.edu.pk#confirmedCases> "1530143"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://su.edu.pk#confirmed> <http://su.edu.pk#source> "https://www.worldometers.info/coronavirus/country/pakistan/"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+# 
+# http://su.edu.pk#heartAttack
+<http://su.edu.pk#heartAttack> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://su.edu.pk#heartAttack> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://su.edu.pk#OtherDiseases> .
+# 
+# http://su.edu.pk#otherCommonSymptoms
+<http://su.edu.pk#otherCommonSymptoms> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://su.edu.pk#otherCommonSymptoms> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://su.edu.pk#SymptomsOtherThanCovid> .
+<http://su.edu.pk#otherCommonSymptoms> <http://su.edu.pk#symptomsinPatient> <http://su.edu.pk#otherCommonSymptoms> .
+<http://su.edu.pk#otherCommonSymptoms> <http://su.edu.pk#SymptomsOtherThanCovid> "CommonDiseases" .
+# 
+# http://su.edu.pk#6feetDistance
+<http://su.edu.pk#6feetDistance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://su.edu.pk#6feetDistance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://su.edu.pk#PreventiveMeasures> .
+<http://su.edu.pk#6feetDistance> <http://su.edu.pk#hasTakenBy> <http://su.edu.pk#6feetDistance> .
+<http://su.edu.pk#6feetDistance> <http://su.edu.pk#PreventiveMeasures> "PM6feetDistance" .
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
